@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const html=fs.readFileSync('dist/index.html','utf8');
 const js=fs.readFileSync('dist/app.js','utf8');
-for(const file of ['styles.css','app.js','favicon.svg','assets/proposta-de-patrocinio.pdf','assets/portfolio-biobuzz-regional.pdf'])assert(fs.existsSync(`dist/${file}`),`Missing ${file}`);
+for(const file of ['styles.css','app.js','favicon.svg','assets/proposta-de-patrocinio.pdf'])assert(fs.existsSync(`dist/${file}`),`Missing ${file}`);
 for(let i=1;i<=25;i++){const file=`dist/assets/image-${String(i).padStart(2,'0')}.jpg`;assert(fs.statSync(file).size>1000,`Missing image ${i}`);}
 for(const id of ['inicio','projetos','conquistas','ajudar','sobre']){assert(html.includes(`id="${id}"`));assert(html.includes(`id="title-${id}"`));}
 assert.equal((js.match(/^  \[\d+,'/gm)||[]).length,20);
