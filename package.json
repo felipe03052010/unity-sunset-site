@@ -1,0 +1,13 @@
+{
+  "name": "instituto-sunset-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional do Instituto Sunset",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check dist/app.js && node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
