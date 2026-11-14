@@ -1,4 +1,4 @@
-name: Deploy no Cloudflare Pages
+name: Publicar Instituto Sunset no GitHub Pages
 
 on:
   push:
@@ -7,19 +7,31 @@ on:
 
 permissions:
   contents: read
-  deployments: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  publish:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Enviar artefato do Pages
+        uses: actions/upload-pages-artifact@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: instituto-sunset
-          directory: dist
+          path: dist
+
+      - name: Publicar no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
