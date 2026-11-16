@@ -12,7 +12,8 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:image" content="https://felipe03052010.github.io/unity-sunset-site/assets/image-17.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312295b'/%3E%3Cpath d='M16 17v23q0 13 16 13t16-13V17H38v23q0 5-6 5t-6-5V17Z' fill='white'/%3E%3Cpath d='m19 11 6-5 7 5 7-5 6 5' fill='none' stroke='%23ff51af' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -443,6 +444,71 @@ footer a:hover{color:var(--pink)}
   .stage{clip-path:none}
 }
 @media print{.header,.top-btn,.progress{display:none}}
+
+/* ---------- brand logo ---------- */
+.brand .logo{flex:none;display:grid;place-items:center;width:46px;height:42px;border-radius:14px;background:var(--navy);box-shadow:inset 0 1px 0 rgba(255,255,255,.18)}
+.brand .logo img{width:36px;height:auto;display:block}
+footer .brand .logo{width:54px;height:50px;border-radius:16px}
+footer .brand .logo img{width:42px}
+@media(min-width:1101px) and (max-width:1260px){.nav a{padding:9px 9px;font-size:14.5px}}
+
+/* ---------- instituto ---------- */
+.inst{display:grid;gap:clamp(28px,4vw,56px);align-items:center}
+@media(min-width:900px){.inst{grid-template-columns:1.05fr .95fr}}
+.inst .shot{aspect-ratio:4/3}
+.pillars{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:clamp(40px,6vw,72px)}
+.pillar{position:relative;border-radius:var(--r-l);background:var(--card);padding:26px;display:grid;gap:10px;align-content:start}
+.pillar b{font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:-.02em;line-height:1.1}
+.pillar p{color:var(--muted);font-size:16px;line-height:1.5}
+.pillar i{font-style:normal;font-family:var(--display);font-weight:800;font-size:15px;color:var(--pink)}
+.how{margin-top:clamp(48px,7vw,90px)}
+.how h3{font-size:clamp(28px,3vw,40px);font-weight:800;margin-bottom:22px}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));counter-reset:st;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:st;position:relative;border-radius:var(--r-l);padding:24px 24px 26px;background:linear-gradient(160deg,#24458f,#16306a);color:#fff;display:grid;gap:8px;align-content:start}
+.steps li::before{content:counter(st);font-family:var(--display);font-weight:800;font-size:44px;line-height:1;color:var(--pink-l)}
+.steps b{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.02em}
+.steps span{color:#d3dcf1;font-size:15.5px;line-height:1.5}
+
+/* ---------- all projects + applications ---------- */
+.allp{margin-top:clamp(56px,8vw,100px)}
+.allp>h3,.apps>h3{font-size:clamp(28px,3vw,40px);font-weight:800;margin-bottom:10px}
+.allp>p,.apps>p{color:var(--muted);max-width:60ch;margin-bottom:26px}
+.pgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.pj{position:relative;border-radius:var(--r-l);padding:24px;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);display:flex;flex-direction:column;gap:8px}
+.pj small{font-weight:700;font-size:13px;letter-spacing:.02em;color:var(--pink-l)}
+.pj b{font-family:var(--display);font-weight:800;font-size:23px;letter-spacing:-.02em;line-height:1.1}
+.pj p{color:#c3cde6;font-size:15.5px;line-height:1.5}
+.pj em{font-style:normal;margin-top:auto;padding-top:12px;border-top:1px solid rgba(255,255,255,.16);font-family:var(--display);font-weight:700;font-size:16px;color:#fff}
+.apps{margin-top:clamp(56px,8vw,100px)}
+.apps-grid{display:grid;gap:14px}
+@media(min-width:900px){.apps-grid{grid-template-columns:1fr 1fr}}
+.app{border-radius:var(--r-l);padding:26px;background:#fff;color:#12295b}
+.app h4{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.02em;margin:0 0 4px}
+.app>span{display:block;color:#5a6680;font-size:15px;margin-bottom:14px}
+.app ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.app li{display:flex;gap:10px;align-items:baseline;font-weight:600;font-size:16px;line-height:1.35}
+.app li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--pink);translate:0 -1px}
+.app li small{font-weight:500;color:#5a6680;font-size:14px}
+.nums{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:14px}
+.nums .goal strong{font-size:clamp(34px,3.6vw,48px)}
+
+/* ---------- history ---------- */
+.tl{display:grid;gap:18px;list-style:none;padding:0;margin:0}
+.era{position:relative;border-radius:var(--r-xl);background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);padding:clamp(22px,3vw,36px);display:grid;gap:clamp(20px,3vw,40px);align-items:center}
+@media(min-width:900px){.era{grid-template-columns:.9fr 1.1fr}.era.solo{grid-template-columns:1fr}}
+.era .yr{display:inline-flex;gap:10px;align-items:center;font-weight:700;font-size:14px;color:var(--pink-l);margin-bottom:10px}
+.era .yr b{padding:5px 12px;border-radius:999px;background:var(--pink);color:#fff;font-family:var(--display);font-weight:800;letter-spacing:.01em}
+.era h3{font-size:clamp(28px,3.2vw,44px);font-weight:800;margin-bottom:12px}
+.era p{color:#c3cde6;max-width:52ch}
+.era-media{display:grid;gap:12px;grid-template-columns:1.55fr 1fr;align-items:stretch}
+.era-media figure{position:relative;margin:0;border-radius:var(--r-l);overflow:hidden;background:#0c1d44;min-height:200px}
+.era-media figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.era-media figure.bot{background:#fff}
+.era-media figure.bot img{object-fit:contain;padding:10px}
+.era-media figure.bot.photo img{object-fit:cover;padding:0}
+.era-media{aspect-ratio:16/8}
+.era-media figcaption{position:absolute;left:8px;bottom:8px;z-index:2;padding:5px 10px;border-radius:999px;font-size:12.5px;font-weight:700;background:rgba(12,29,68,.82);color:#fff;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+@media(max-width:560px){.era-media{grid-template-columns:1fr;aspect-ratio:auto}.era-media figure{aspect-ratio:4/3}}
 </style>
 </head>
 <body>
@@ -452,15 +518,17 @@ footer a:hover{color:var(--pink)}
 <header class="header" id="header">
   <div class="bar">
     <a class="brand" href="#inicio" aria-label="Instituto Sunset — início">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="32" fill="#12295b"/><path d="M19 20v19q0 11 13 11t13-11V20h-8v19q0 4-5 4t-5-4V20Z" fill="#fff"/><path d="m22 14 5-4 5 4 5-4 5 4" fill="none" stroke="#ff51af" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="logo"><img src="assets/logo-unity.png" width="320" height="293" alt="" decoding="async"></span>
       <span>Instituto Sunset</span>
     </a>
     <nav class="nav" id="nav" aria-label="Navegação principal">
       <button class="grabber" id="grabber" type="button" aria-label="Fechar menu"><i aria-hidden="true"></i></button>
+      <a href="#instituto" data-en="Institute">Instituto</a>
       <a href="#projetos" data-en="Projects">Projetos</a>
       <a href="#robo" data-en="Robot">Robô</a>
       <a href="#conquistas" data-en="Awards">Conquistas</a>
       <a href="#sobre" data-en="Team">Equipe</a>
+      <a href="#historia" data-en="History">História</a>
       <a href="#galeria" data-en="Gallery">Galeria</a>
       <a href="#ajudar" data-en="Sponsor">Patrocine</a>
       <a href="#contato" data-en="Contact">Contato</a>
@@ -528,6 +596,36 @@ footer a:hover{color:var(--pink)}
   </div>
 </section>
 
+<!-- ========== INSTITUTO ========== -->
+<section class="sec white" id="instituto" aria-labelledby="t-instituto">
+  <div class="wrap">
+    <div class="inst">
+      <div class="rv">
+        <p class="eyebrow" data-en="The Institute">O Instituto</p>
+        <h2 id="t-instituto" data-en="Technology education for those who need it most.">Educação tecnológica para quem mais precisa.</h2>
+        <p class="lede" style="margin-top:22px" data-en="Instituto Sunset grows out of the experience of team Unity Sunset #22660 to give structure and continuity to the social projects created since 2022. The goal is to bring robotics, science and technology to children, public schools, families and educators in the Mata Sul of Pernambuco.">O Instituto Sunset nasce da experiência da equipe Unity Sunset #22660 para dar estrutura e continuidade aos projetos sociais criados desde 2022. O objetivo é levar robótica, ciência e tecnologia a crianças, escolas públicas, famílias e educadores da Mata Sul de Pernambuco.</p>
+      </div>
+      <figure class="shot tilt rv zoom"><img src="assets/inst-oficina.jpg" width="800" height="450" loading="lazy" decoding="async" alt="Crianças montando peças de LEGO em uma oficina do projeto"><figcaption data-en="Robotics workshop with children from the community">Oficina de robótica com crianças da comunidade</figcaption></figure>
+    </div>
+    <div class="pillars">
+      <div class="pillar tilt rv" style="--d:.00s"><i aria-hidden="true">01</i><b data-en="Robotics in childhood">Robótica na infância</b><p data-en="Workshops based on FIRST LEGO League Discover introduce robotics through play, so children can explore, experiment and express themselves without fear of mistakes.">Oficinas com a metodologia FIRST LEGO League Discover apresentam a robótica de forma lúdica, para que as crianças explorem, experimentem e se expressem sem medo de errar.</p></div>
+      <div class="pillar tilt rv" style="--d:.06s"><i aria-hidden="true">02</i><b data-en="Inclusion">Inclusão</b><p data-en="Activities and materials adapted for neurodivergent children, with a predictable routine, visual support and guidance from psychology professionals.">Atividades e materiais adaptados para crianças neurodivergentes, com rotina previsível, apoio visual e acompanhamento de profissionais de psicologia.</p></div>
+      <div class="pillar tilt rv" style="--d:.12s"><i aria-hidden="true">03</i><b data-en="Educator training">Formação de educadores</b><p data-en="A training track prepares public school educators to run the sessions and keep the teams going on their own.">Uma trilha de formação prepara educadores da rede pública para conduzir os encontros e manter as equipes ativas por conta própria.</p></div>
+      <div class="pillar tilt rv" style="--d:.18s"><i aria-hidden="true">04</i><b data-en="Family and community">Família e comunidade</b><p data-en="Gatherings, walks and events bring families, schools and partners together, so learning continues outside the classroom.">Encontros, caminhadas e eventos aproximam famílias, escolas e parceiros, para que o aprendizado continue fora da sala.</p></div>
+    </div>
+    <div class="how">
+      <h3 class="rv" data-en="How the projects are applied.">Como os projetos são aplicados.</h3>
+      <ol class="steps">
+        <li class="rv" style="--d:.00s"><b data-en="Listen">Ouvir</b><span data-en="We start by listening to schools, families and partners to understand what each place needs.">Começamos ouvindo escolas, famílias e parceiros para entender as necessidades de cada lugar.</span></li>
+        <li class="rv" style="--d:.06s"><b data-en="Train">Formar</b><span data-en="Educators go through a training track before the sessions begin.">Educadores passam por uma trilha de formação antes do início das aplicações.</span></li>
+        <li class="rv" style="--d:.12s"><b data-en="Apply">Aplicar</b><span data-en="Each team of children completes the FLL Discover Engineering Notebook activities during the season, ending with a celebration event.">Cada equipe de crianças realiza as atividades do Caderno de Engenharia da FLL Discover ao longo da temporada, com um evento de encerramento.</span></li>
+        <li class="rv" style="--d:.18s"><b data-en="Follow up">Acompanhar</b><span data-en="Indicators and feedback from families and educators show what worked and what needs to change.">Indicadores e relatos de famílias e educadores mostram o que funcionou e o que precisa mudar.</span></li>
+      </ol>
+      <p class="note" style="margin-top:18px" data-en="Instituto Sunset is being structured, a goal recorded in the team&#x27;s BIOBUZZ portfolio.">O Instituto Sunset está em fase de estruturação, meta registrada no portfólio BIOBUZZ da equipe.</p>
+    </div>
+  </div>
+</section>
+
 <!-- PROJECTS -->
 <section class="sec navy" id="projetos" aria-labelledby="t-projetos" style="padding-bottom:clamp(80px,10vw,140px)">
   <div class="wrap">
@@ -577,6 +675,47 @@ footer a:hover{color:var(--pink)}
   </div>
   <div class="wrap">
     <p class="note" data-en="Results recorded in the regional BIOBUZZ portfolio submitted by the team.">Resultados registrados no portfólio BIOBUZZ regional enviado pela equipe.</p>
+    <div class="allp">
+      <h3 class="rv" data-en="Every project, since 2022.">Todos os projetos, desde 2022.</h3>
+      <p class="rv" data-en="Each season left projects that are still active, evolved or paved the way for the current ones.">Cada temporada deixou projetos que seguem ativos, evoluíram ou abriram caminho para os atuais.</p>
+      <div class="pgrid">
+        <article class="pj tilt rv"><small data-en="Since 2022">Desde 2022</small><b data-en="Robotics in Action">Robótica em Ação</b><p data-en="It began with talks and workshops using robotics kits in public schools in Escada and nearby towns. Today it creates FLL Discover teams with children from the community.">Começou com palestras e oficinas com kits de robótica em escolas públicas de Escada e região. Hoje forma equipes de FLL Discover com crianças da comunidade.</p><em data-en="17 teams in 2026/27">17 equipes em 2026/27</em></article>
+        <article class="pj tilt rv"><small data-en="Since 2023">Desde 2023</small><b data-en="Integrar Project">Projeto Integrar</b><p data-en="Started as Robotics for Neurodivergent Children. It uses LEGO-based therapy and guided activities with neurodivergent children in clinics and care centers.">Nasceu como Robótica para Neurodivergentes. Usa a legoterapia e atividades guiadas com crianças neuroatípicas em clínicas e centros de atendimento.</p><em data-en="577 children in 2024/25">577 crianças em 2024/25</em></article>
+        <article class="pj tilt rv"><small data-en="Since 2025">Desde 2025</small><b data-en="Exploring FIRST">Explorando a FIRST</b><p data-en="An activity book created with the support of a neuropsychologist, so neurodivergent children keep learning at home with their families.">Livro de atividades criado com apoio de uma neuropsicóloga, para que crianças neurodivergentes continuem aprendendo em casa com a família.</p><em data-en="2nd edition of the book">2ª versão do livro</em></article>
+        <article class="pj tilt rv"><small data-en="2026">2026</small><b data-en="Training multipliers">Formação de multiplicadores</b><p data-en="An online training track for public school educators, with official FIRST materials and ongoing support.">Trilha de formação on-line para educadores da rede pública, com materiais oficiais da FIRST e acompanhamento contínuo.</p><em data-en="24 hours, 7 educators">24 horas, 7 educadores</em></article>
+        <article class="pj tilt rv"><small data-en="2026">2026</small><b data-en="Family in Action">Família em Ação</b><p data-en="A celebration with families to present each team&#x27;s progress, hand out certificates and medals and talk about the role of robotics in children&#x27;s development.">Celebração com as famílias para apresentar o progresso das equipes, entregar certificados e medalhas e conversar sobre o papel da robótica no desenvolvimento das crianças.</p><em data-en="Families, educators and team together">Famílias, educadores e equipe juntos</em></article>
+        <article class="pj tilt rv"><small data-en="2026">2026</small><b data-en="Awareness Walk">Caminhada de Conscientização</b><p data-en="A walk held with a child development clinic to talk about neurodivergence and inclusion in robotics.">Caminhada em parceria com uma clínica de desenvolvimento infantil para falar de neurodivergência e inclusão na robótica.</p><em data-en="Inclusion on the city&#x27;s agenda">Inclusão em pauta na cidade</em></article>
+        <article class="pj tilt rv"><small data-en="Since 2025">Desde 2025</small><b data-en="OXETC">OXETC</b><p data-en="A digital community created with team FTBEN #21077 to connect FTC teams in Northeast Brazil, with mentoring and scrimmages.">Comunidade digital criada com a equipe FTBEN #21077 para conectar equipes FTC do Nordeste, com mentorias e competições simuladas.</p><em data-en="15+ teams supported">+15 equipes apoiadas</em></article>
+        <article class="pj tilt rv"><small data-en="Since 2023">Desde 2023</small><b data-en="FTC Beginners Site">Site para Iniciantes na FTC</b><p data-en="An online platform with accessible content about the competition for newcomers.">Plataforma on-line com conteúdo acessível sobre a competição para quem está começando.</p><em data-en="23,962 people reached by 2024/25">23.962 pessoas alcançadas até 2024/25</em></article>
+        <article class="pj tilt rv"><small data-en="2023 to 2025">2023 a 2025</small><b data-en="Lights, Camera, Unity!">Luz, Câmera, Unity!</b><p data-en="Encouraging young people to explore filmmaking, with video production and film donations to public schools.">Incentivo ao audiovisual entre jovens, com produção de vídeos e doação de filmes a escolas públicas.</p><em data-en="532+ participants in 2023/24">+532 participantes em 2023/24</em></article>
+        <article class="pj tilt rv"><small data-en="2022/23">2022/23</small><b data-en="CONFEPE">CONFEPE</b><p data-en="FIRST Connection of Pernambuco Teams: a social media series with more than 20 teams from the state to spread the word about FIRST.">Conexão FIRST de Equipes Pernambucanas: uma série nas redes sociais com mais de 20 equipes do estado para divulgar a FIRST.</p><em data-en="10,000+ views">+10 mil visualizações</em></article>
+        <article class="pj tilt rv"><small data-en="2022 to 2025">2022 a 2025</small><b data-en="Solidarity actions">Ações solidárias</b><p data-en="Solidarity Christmas, support for a home for the elderly, a food drive called Cesta da Esperança and a life-appreciation campaign in September.">Natal Solidário, apoio a um abrigo de idosos, arrecadação de alimentos com a Cesta da Esperança e uma ação de valorização da vida em setembro.</p><em data-en="Robotics is also about care">Robótica também é cuidado</em></article>
+        <article class="pj tilt rv"><small data-en="Every season">Todas as temporadas</small><b data-en="Mentoring and events">Mentorias e eventos</b><p data-en="Mentoring for FLL team Unity Sunrise, Unity Day to bring children closer to FIRST values and Connection Day, a robotics immersion for partner schools and companies.">Mentoria à equipe de FLL Unity Sunrise, Unity Day para aproximar crianças dos valores da FIRST e Connection Day, uma imersão em robótica para escolas e empresas parceiras.</p><em data-en="Shared knowledge">Conhecimento compartilhado</em></article>
+      </div>
+    </div>
+    <div class="apps">
+      <h3 class="rv" data-en="Where the projects have been applied.">Onde os projetos já foram aplicados.</h3>
+      <p class="rv" data-en="Sessions take place inside public schools, clinics and community spaces, with the team present at each one.">As aplicações acontecem dentro de escolas públicas, clínicas e espaços da comunidade, com a equipe presente em cada encontro.</p>
+      <div class="apps-grid">
+        <div class="app tilt rv">
+          <h4 data-en="Public schools">Escolas públicas</h4>
+          <span data-en="Robotics in Action">Robótica em Ação</span>
+          <ul><li>Escola Municipal Barão de Suassuna</li><li>Escola Municipal Almerita Maria</li><li>Escola Municipal Cícero Dias</li><li>Escola Municipal Zenóbio Lins</li><li>Escola Estadual Vigário Pedrosa</li><li>Escola Municipal Madre Iva <small>Cabo de Santo Agostinho</small></li></ul>
+        </div>
+        <div class="app tilt rv" style="--d:.06s">
+          <h4 data-en="Clinics and community spaces">Clínicas e espaços da comunidade</h4>
+          <span data-en="Integrar Project, Exploring FIRST and Family in Action">Projeto Integrar, Explorando a FIRST e Família em Ação</span>
+          <ul><li>CEAMPE</li><li>Espaço Desenvolver</li><li data-en="More than eight sessions in clinics in 2025/26">Mais de oito aplicações em clínicas em 2025/26</li><li data-en="Family in Action held at Escada City Hall">Família em Ação realizado na Prefeitura de Escada</li></ul>
+        </div>
+      </div>
+      <div class="nums">
+        <div class="goal tilt rv"><strong>10.891</strong><p data-en="students reached in 2023/24">alunos assistidos em 2023/24</p></div>
+        <div class="goal tilt rv" style="--d:.06s"><strong>8.793</strong><p data-en="students reached in 2024/25">alunos assistidos em 2024/25</p></div>
+        <div class="goal tilt rv" style="--d:.12s"><strong>13 → 17</strong><p data-en="FLL Discover teams, from 2025/26 to 2026/27">equipes de FLL Discover, de 2025/26 para 2026/27</p></div>
+        <div class="goal tilt rv" style="--d:.18s"><strong>130</strong><p data-en="participants in 2026/27">participantes em 2026/27</p></div>
+      </div>
+      <p class="note" style="margin-top:16px" data-en="Figures recorded in the team&#x27;s portfolios for each season.">Números registrados nos portfólios da equipe em cada temporada.</p>
+    </div>
     <div class="goals">
       <div class="goal-intro rv">
         <p class="eyebrow" style="margin:0" data-en="Our next step">Nosso próximo passo</p>
@@ -702,6 +841,25 @@ footer a:hover{color:var(--pink)}
       <h2 data-en="To show that robotics is a universe for everyone.">Mostrar que a robótica é um universo para todos.</h2>
       <p data-en="Democratize access to technology education, train educators and bring children closer to robotics from an early age. That is why we keep moving.">Democratizar o acesso à educação tecnológica, capacitar educadores e aproximar crianças da robótica desde a infância. É por isso que seguimos em movimento.</p>
     </div>
+  </div>
+</section>
+
+<!-- ========== HISTORIA ========== -->
+<section class="sec navy" id="historia" aria-labelledby="t-historia">
+  <div class="wrap">
+    <div class="head rv">
+      <h2 id="t-historia" data-en="From 2016 to today.">De 2016 até aqui.</h2>
+      <p class="lede" data-en="Unity was born in FIRST LEGO League and reached FIRST Tech Challenge in 2022. Each season had a team, a robot and new projects.">A Unity nasceu na FIRST LEGO League e chegou à FIRST Tech Challenge em 2022. Cada temporada teve uma equipe, um robô e projetos novos.</p>
+    </div>
+    <ol class="tl">
+      <li class="era solo rv"><div><p class="yr"><b>2016</b><span>FIRST LEGO League</span></p><h3 data-en="Where it all began.">Onde tudo começou.</h3><p data-en="Unity is born in Pernambuco as a FIRST LEGO League team, in the Animal Allies season. Six seasons and 11 awards in FLL came before the next step.">A Unity nasce em Pernambuco como equipe de FIRST LEGO League, na temporada Animal Allies. Foram seis temporadas e 11 prêmios na FLL antes do próximo passo.</p></div></li>
+      <li class="era rv"><div><p class="yr"><b>2022/23</b><span>POWER PLAY</span></p><h3 data-en="The FTC debut.">A estreia na FTC.</h3><p data-en="The performance at Open International Brazil 2022 earns a spot in FIRST Tech Challenge and Unity Sunset #22660 is born. In the first year, five social projects reach 4,485 people directly, including Robotics in Action.">O desempenho no Open International Brazil 2022 abre a vaga na FIRST Tech Challenge e nasce a Unity Sunset #22660. No primeiro ano, cinco projetos sociais alcançam 4.485 pessoas diretamente, entre eles o Robótica em Ação.</p></div><div class="era-media"><figure><img src="assets/hist-2022-equipe.jpg" width="771" height="338" loading="lazy" decoding="async" alt="Equipe Unity Sunset na temporada POWER PLAY"><figcaption data-en="Team 2022/23">Equipe 2022/23</figcaption></figure><figure class="bot"><img src="assets/hist-2022-robo.jpg" width="759" height="799" loading="lazy" decoding="async" alt="Robô da Unity Sunset na temporada POWER PLAY"><figcaption data-en="POWER PLAY robot">Robô POWER PLAY</figcaption></figure></div></li>
+      <li class="era rv"><div><p class="yr"><b>2023/24</b><span>CENTERSTAGE</span></p><h3 data-en="Projects that scale up.">Projetos que ganham escala.</h3><p data-en="Robotics in Action reaches municipal and state schools, totaling 10,891 students. Robotics for Neurodivergent Children, Lights, Camera, Unity! and the FTC Beginners Site are created. The technical partnership with Eurocontainers begins.">O Robótica em Ação chega a escolas municipais e estaduais e soma 10.891 alunos assistidos. Surgem o Robótica para Neurodivergentes, o Luz, Câmera, Unity! e o Site para Iniciantes na FTC. Começa a parceria técnica com a Eurocontainers.</p></div><div class="era-media"><figure><img src="assets/hist-2023-equipe.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Equipe Unity Sunset na temporada CENTERSTAGE"><figcaption data-en="Team 2023/24">Equipe 2023/24</figcaption></figure><figure class="bot photo"><img src="assets/hist-2023-robo.jpg" width="733" height="733" loading="lazy" decoding="async" alt="Robô da Unity Sunset na temporada CENTERSTAGE"><figcaption data-en="CENTERSTAGE robot">Robô CENTERSTAGE</figcaption></figure></div></li>
+      <li class="era rv"><div><p class="yr"><b>2024/25</b><span>INTO THE DEEP</span></p><h3 data-en="Beyond Escada.">Além de Escada.</h3><p data-en="The projects reach Cabo de Santo Agostinho. Six schools and 8,793 students in Robotics in Action, 577 children served in clinics and new solidarity actions.">Os projetos chegam ao Cabo de Santo Agostinho. São seis escolas e 8.793 alunos no Robótica em Ação, 577 crianças atendidas em clínicas e novas ações solidárias.</p></div><div class="era-media"><figure><img src="assets/hist-2024-equipe.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Equipe Unity Sunset na temporada INTO THE DEEP"><figcaption data-en="Team 2024/25">Equipe 2024/25</figcaption></figure><figure class="bot"><img src="assets/hist-2024-robo.jpg" width="551" height="467" loading="lazy" decoding="async" alt="Robô da Unity Sunset na temporada INTO THE DEEP"><figcaption data-en="INTO THE DEEP robot">Robô INTO THE DEEP</figcaption></figure></div></li>
+      <li class="era rv"><div><p class="yr"><b>2025/26</b><span>DECODE</span></p><h3 data-en="From workshop to team.">Da oficina à equipe.</h3><p data-en="Robotics in Action is redesigned and starts creating FLL Discover teams: 13 teams and 52 children. The Integrar Project gains regular sessions and the Exploring FIRST book. OXETC, a network of FTC teams in Northeast Brazil, is born.">O Robótica em Ação é reformulado e passa a criar equipes de FLL Discover: 13 equipes e 52 crianças. O Projeto Integrar ganha aplicações periódicas e o livro Explorando a FIRST. Nasce a OXETC, rede de equipes FTC do Nordeste.</p></div><div class="era-media"><figure><img src="assets/hist-2025-equipe.jpg" width="800" height="450" loading="lazy" decoding="async" alt="Equipe Unity Sunset na temporada DECODE"><figcaption data-en="Team 2025/26">Equipe 2025/26</figcaption></figure><figure class="bot"><img src="assets/hist-2025-robo.jpg" width="466" height="452" loading="lazy" decoding="async" alt="Robô da Unity Sunset na temporada DECODE"><figcaption data-en="DECODE robot">Robô DECODE</figcaption></figure></div></li>
+      <li class="era rv"><div><p class="yr"><b>2026/27</b><span>BIOBUZZ</span></p><h3 data-en="The Institute takes shape.">O Instituto toma forma.</h3><p data-en="There are 17 FLL Discover teams, 130 participants and a training track for educators. The team becomes an FLL Discover ambassador and starts structuring Instituto Sunset.">São 17 equipes de FLL Discover, 130 participantes e uma trilha de formação para educadores. A equipe se torna embaixadora da FLL Discover e começa a estruturar o Instituto Sunset.</p></div><div class="era-media"><figure><img src="assets/hist-2026-equipe.jpg" width="600" height="480" loading="lazy" decoding="async" alt="Equipe Unity Sunset na temporada BIOBUZZ"><figcaption data-en="Team 2026/27">Equipe 2026/27</figcaption></figure><figure class="bot"><img src="assets/hist-2026-robo.jpg" width="977" height="678" loading="lazy" decoding="async" alt="Robô da Unity Sunset na temporada BIOBUZZ"><figcaption data-en="BIOBUZZ robot">Robô BIOBUZZ</figcaption></figure></div></li>
+    </ol>
+    <p class="note" style="margin-top:18px" data-en="Photos and information from the team&#x27;s portfolios and engineering notebooks, from POWER PLAY to BIOBUZZ.">Fotos e informações dos portfólios e cadernos de engenharia da equipe, de POWER PLAY a BIOBUZZ.</p>
   </div>
 </section>
 
@@ -851,13 +1009,15 @@ footer a:hover{color:var(--pink)}
   <div class="wrap">
     <div class="f-grid">
       <div>
-        <a class="brand" href="#inicio"><svg viewBox="0 0 64 64" aria-hidden="true" style="width:44px;height:44px"><rect width="64" height="64" rx="32" fill="#12295b"/><path d="M19 20v19q0 11 13 11t13-11V20h-8v19q0 4-5 4t-5-4V20Z" fill="#fff"/><path d="m22 14 5-4 5 4 5-4 5 4" fill="none" stroke="#ff51af" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Instituto Sunset</span></a>
+        <a class="brand" href="#inicio"><span class="logo"><img src="assets/logo-unity.png" width="320" height="293" alt="" decoding="async"></span><span>Instituto Sunset</span></a>
         <p class="tag" data-en="Robotics that connects. People who transform.">Robótica que conecta. Pessoas que transformam.</p>
       </div>
       <div>
         <h4 data-en="Site">Site</h4>
         <ul>
+          <li><a href="#instituto" data-en="Institute">Instituto</a></li>
           <li><a href="#projetos" data-en="Projects">Projetos</a></li>
+          <li><a href="#historia" data-en="History">História</a></li>
           <li><a href="#robo" data-en="Robot">Robô</a></li>
           <li><a href="#conquistas" data-en="Awards">Conquistas</a></li>
           <li><a href="#sobre" data-en="Team">Equipe</a></li>
