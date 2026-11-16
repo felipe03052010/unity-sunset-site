@@ -1,71 +1,1210 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#12295b"><meta property="og:title" content="Instituto Sunset — Educação que transforma"><meta property="og:description" content="Projetos, equipe e oportunidades para apoiar a educação tecnológica na Mata Sul de Pernambuco."><meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
-  <meta name="description" content="Instituto Sunset: projetos de educação tecnológica, inclusão, formação de educadores e robótica na Mata Sul de Pernambuco. Conheça a equipe e saiba como patrocinar.">
-  <title>Instituto Sunset — Educação que transforma futuros.</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Instituto Sunset — Educação que transforma futuros</title>
+<meta name="description" content="Instituto Sunset: projetos de educação tecnológica, inclusão, formação de educadores e robótica na Mata Sul de Pernambuco. Conheça a equipe Unity Sunset #22660 e saiba como patrocinar.">
+<meta name="theme-color" content="#12295b">
+<meta property="og:title" content="Instituto Sunset — Educação que transforma">
+<meta property="og:description" content="Projetos, equipe e oportunidades para apoiar a educação tecnológica na Mata Sul de Pernambuco.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://felipe03052010.github.io/unity-sunset-site/assets/image-17.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312295b'/%3E%3Cpath d='M16 17v23q0 13 16 13t16-13V17H38v23q0 5-6 5t-6-5V17Z' fill='white'/%3E%3Cpath d='m19 11 6-5 7 5 7-5 6 5' fill='none' stroke='%23ff51af' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Instituto Sunset","alternateName":"Unity Sunset #22660","url":"https://felipe03052010.github.io/unity-sunset-site/","email":"unity.sunset22660@hotmail.com","address":{"@type":"PostalAddress","addressLocality":"Escada","addressRegion":"PE","addressCountry":"BR"},"sameAs":["https://www.instagram.com/unitysunset_ftc/","https://www.tiktok.com/@unitysunset_ftc"]}
+</script>
+<style>
+:root{
+  --navy:#12295b;--navy-2:#0c1d44;--navy-3:#1b3672;--pink:#d91c83;--pink-l:#ff51af;--sky:#7fa6ff;
+  --gray:#f2f4f8;--line-l:#dde3ee;
+  --display:"Bricolage Grotesque","Arial Narrow",Arial,sans-serif;--body:"Instrument Sans",Arial,Helvetica,sans-serif;
+  --r-xl:32px;--r-l:24px;--r-m:16px;--r-s:12px;
+  --spring:cubic-bezier(.34,1.56,.64,1);--ease:cubic-bezier(.2,.8,.2,1);
+  --glass-edge:inset 0 1px 0 rgba(255,255,255,.6),inset 0 0 0 1px rgba(255,255,255,.18);
+  --pad:max(20px,calc((100vw - 1200px)/2));
+}
+@supports (transition-timing-function:linear(0,1)){
+  :root{--spring:linear(0,.009,.035 2.1%,.141,.281 6.7%,.723 12.9%,.938 16.7%,1.017,1.077,1.121,1.149 24.3%,1.159,1.163,1.161,1.154 29.9%,1.129 32.8%,1.051 39.6%,1.017 43.1%,.991,.977 51%,.974 53.8%,.975 57.1%,.997 69.8%,1.003 76.9%,1.004 83.8%,1)}
+}
+.white{--bg:#fff;--ink:#12295b;--muted:#5a6680;--line:#dde3ee;--card:#f2f4f8;--accent:var(--pink);--btn-bg:var(--navy);--btn-fg:#fff}
+.gray{--bg:#f2f4f8;--ink:#12295b;--muted:#5a6680;--line:#d6dce8;--card:#fff;--accent:var(--pink);--btn-bg:var(--navy);--btn-fg:#fff}
+.navy{--bg:#12295b;--ink:#fff;--muted:#c3cde6;--line:rgba(255,255,255,.18);--card:#1b3672;--accent:var(--pink-l);--btn-bg:#fff;--btn-fg:#12295b}
+.white,.gray,.navy{background:var(--bg);color:var(--ink)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:#12295b;font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.locked{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0;padding:0}
+h1,h2,h3,h4,p,figure,ul,ol{margin:0}ul,ol{padding:0;list-style:none}
+h1,h2,h3{font-family:var(--display);line-height:1.02;letter-spacing:-.03em;text-wrap:balance}
+h2{font-size:clamp(36px,5.6vw,72px);font-weight:800}
+h3{font-size:clamp(22px,2.3vw,30px);font-weight:700;letter-spacing:-.015em;line-height:1.1}
+:focus-visible{outline:3px solid var(--pink-l);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.sec{padding-block:clamp(80px,11vw,160px)}
+.lede{font-size:clamp(18px,1.6vw,21px);color:var(--muted);max-width:56ch;line-height:1.55}
+.eyebrow{font-weight:600;font-size:17px;color:var(--accent);margin-bottom:14px}
+.head{display:grid;gap:22px;margin-bottom:clamp(40px,6vw,80px)}
+.head.center{text-align:center;justify-items:center}
+.note{font-size:13.5px;color:var(--muted);max-width:70ch}
+.skip{position:fixed;left:12px;top:-80px;z-index:300;background:var(--pink);color:#fff;padding:12px 16px;border-radius:12px;font-weight:700}
+.skip:focus{top:12px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:16px;background:var(--btn-bg);color:var(--btn-fg);border:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.2);transition:transform .55s var(--spring),background .2s,color .2s,box-shadow .2s}
+.btn:hover{background:var(--pink);color:#fff}
+.btn.pink{background:var(--pink);color:#fff;box-shadow:0 10px 26px -12px rgba(217,28,131,.9),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn.pink:hover{background:#c0156f}
+.btn.glass{background:rgba(255,255,255,.14);color:#fff;-webkit-backdrop-filter:blur(18px) saturate(170%);backdrop-filter:blur(18px) saturate(170%);box-shadow:var(--glass-edge)}
+.btn.glass:hover{background:rgba(255,255,255,.26)}
+.btn:active,.tool:active,.chip:active,.round:active,.seg button:active,.stop:active,.thumbs button:active,.lb-close:active{transform:scale(.93);transition:transform .12s ease-out}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--accent);font-size:17px}
+.link svg{width:16px;height:16px;transition:transform .45s var(--spring)}
+.link:hover svg{transform:translateX(4px)}
+.round{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--card);color:var(--ink);transition:transform .55s var(--spring),background .2s,opacity .2s}
+.round:hover{background:var(--pink);color:#fff}
+.round svg{width:18px;height:18px}
+.round:disabled{opacity:.35;cursor:default}
+
+/* header (floating glass capsule) */
+.progress{position:fixed;inset:0 0 auto 0;height:3px;z-index:200;background:linear-gradient(90deg,var(--pink),var(--pink-l));transform-origin:0 50%;transform:scaleX(0)}
+.header{position:fixed;top:12px;left:0;right:0;z-index:100;pointer-events:none;transition:transform .6s var(--spring)}
+.header.hide{transform:translateY(-130%)}
+body.menu-open .header{z-index:160;transform:none}
+.bar{pointer-events:auto;position:relative;width:min(1240px,100% - 24px);margin-inline:auto;height:60px;border-radius:999px;display:flex;align-items:center;gap:14px;padding:0 8px 0 10px;color:#12295b}
+.bar::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);box-shadow:0 10px 30px -14px rgba(12,29,68,.35),inset 0 1px 0 rgba(255,255,255,.9),inset 0 0 0 1px rgba(18,41,91,.07)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.bar::before{background:#fff}}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:17px;line-height:1;margin-right:auto;letter-spacing:-.01em}
+.brand svg{width:40px;height:40px;flex:none}
+.nav{display:flex;gap:2px}
+.nav a{padding:9px 13px;border-radius:999px;font-size:15px;font-weight:600;transition:background .2s,color .2s}
+.nav a:hover{background:rgba(18,41,91,.07)}
+.nav a[aria-current=true]{background:var(--navy);color:#fff}
+.tools{display:flex;gap:6px;align-items:center}
+.tool{height:44px;min-width:44px;padding:0 12px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:13.5px;background:rgba(18,41,91,.06);transition:transform .55s var(--spring),background .2s}
+.tool:hover{background:rgba(18,41,91,.12)}
+.tool svg{width:19px;height:19px}
+.bar .btn{min-height:44px;padding:9px 20px;font-size:15px}
+.burger,.grabber{display:none}
+.scrim{position:fixed;inset:0;z-index:140;background:rgba(12,29,68,.35);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.scrim.on{opacity:1;visibility:visible}
+@media(max-width:1100px){
+  .burger{display:inline-flex}
+  .bar .btn{display:none}
+  .nav{position:fixed;left:0;right:0;bottom:0;z-index:150;flex-direction:column;gap:0;max-height:86dvh;overflow:auto;border-radius:30px 30px 0 0;padding:6px 22px calc(26px + env(safe-area-inset-bottom));
+    background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(30px) saturate(190%);backdrop-filter:blur(30px) saturate(190%);box-shadow:0 -20px 50px -20px rgba(12,29,68,.45),inset 0 1px 0 #fff;
+    visibility:hidden;transform:translateY(105%);transition:transform .6s var(--spring),visibility 0s .6s}
+  .nav.open{visibility:visible;transform:translateY(var(--drag,0px));transition:transform .6s var(--spring),visibility 0s}
+  .nav.dragging{transition:none}
+  .grabber{display:flex;justify-content:center;align-items:center;height:30px;width:100%;flex:none;touch-action:none;cursor:grab}
+  .grabber i{width:42px;height:5px;border-radius:5px;background:rgba(18,41,91,.25)}
+  .nav a{font-family:var(--display);font-size:27px;font-weight:700;padding:13px 6px;border-radius:14px}
+  .nav a[aria-current=true]{background:none;color:var(--pink)}
+  .nav.open a{animation:sheetIn .6s var(--spring) backwards}
+  .nav.open a:nth-of-type(2){animation-delay:.03s}.nav.open a:nth-of-type(3){animation-delay:.06s}.nav.open a:nth-of-type(4){animation-delay:.09s}
+  .nav.open a:nth-of-type(5){animation-delay:.12s}.nav.open a:nth-of-type(6){animation-delay:.15s}.nav.open a:nth-of-type(7){animation-delay:.18s}
+}
+@keyframes sheetIn{from{opacity:0;transform:translateY(18px)}}
+@media(max-width:420px){.brand span{font-size:15px}}
+
+/* animated aurora */
+.aurora{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.aurora i{position:absolute;width:60vmax;height:60vmax;border-radius:50%;filter:blur(80px);opacity:.5;mix-blend-mode:screen;animation:drift 22s ease-in-out infinite alternate}
+.aurora i:nth-child(1){background:#2a5bd7;left:-15vmax;top:-20vmax}
+.aurora i:nth-child(2){background:#4f86ff;right:-20vmax;top:10vmax;animation-duration:28s;animation-delay:-6s}
+.aurora i:nth-child(3){background:#1a3f9e;left:20vmax;bottom:-35vmax;opacity:.35;animation-duration:34s;animation-delay:-12s}
+@keyframes drift{0%{transform:translate(0,0) scale(1)}50%{transform:translate(8vmax,6vmax) scale(1.15)}100%{transform:translate(-6vmax,10vmax) scale(.9)}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;color:#fff;overflow:hidden;background:#0c1d44;isolation:isolate}
+.hero .aurora{z-index:-1;opacity:.6}
+.hero-in{position:relative;padding:120px 0 clamp(56px,7vw,96px);display:grid;gap:clamp(36px,5vw,64px);align-items:center;will-change:transform,opacity}
+@media(min-width:960px){.hero-in{grid-template-columns:1fr 1fr}}
+.origin{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;padding:8px 14px 8px 10px;border-radius:999px;background:rgba(255,255,255,.12);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:var(--glass-edge);margin-bottom:24px}
+.origin i{width:8px;height:8px;border-radius:50%;background:var(--pink-l);box-shadow:0 0 0 0 rgba(255,81,175,.7);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(255,81,175,0)}100%{box-shadow:0 0 0 0 rgba(255,81,175,0)}}
+.hero h1{font-size:clamp(38px,4.8vw,68px);font-weight:800;letter-spacing:-.035em;line-height:1;max-width:14ch}
+.hero .lede{color:#d3dcf1;margin-top:22px;max-width:50ch;font-size:clamp(17px,1.4vw,19px)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-photo{position:relative;justify-self:center;width:100%;max-width:660px;aspect-ratio:3/2;border-radius:28px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.12)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo figcaption{position:absolute;left:14px;bottom:14px;right:14px;justify-self:start;width:max-content;max-width:calc(100% - 28px);padding:10px 16px;border-radius:16px;font-family:var(--display);font-weight:700;font-size:clamp(15px,1.4vw,18px);line-height:1.2;background:rgba(12,29,68,.45);-webkit-backdrop-filter:blur(16px) saturate(170%);backdrop-filter:blur(16px) saturate(170%);box-shadow:var(--glass-edge);z-index:4}
+.hero-photo figcaption em{font-style:normal;color:#ffb3d9}
+.js .hero-in>*{opacity:0;transform:translateY(26px);animation:heroIn 1s var(--ease) forwards}
+.js .hero-in>div>*{opacity:0;transform:translateY(26px);animation:heroIn 1s var(--ease) forwards}
+.js .hero-in>div{opacity:1;transform:none;animation:none}
+.js .hero-in .origin{animation-delay:.1s}.js .hero-in h1{animation-delay:.2s}.js .hero-in .lede{animation-delay:.35s}.js .hero-in .actions{animation-delay:.5s}
+.js .hero-in>.hero-photo{opacity:1;transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));animation:photoIn 1.2s var(--ease) .3s both}
+@keyframes photoIn{from{opacity:0;translate:0 50px;scale:.94}to{opacity:1;translate:none;scale:none}}
+@keyframes heroIn{to{opacity:1;transform:none}}
+
+
+
+
+.pill{padding:10px 18px;border-radius:999px;background:var(--gray);font-weight:600;font-size:15px}
+
+/* bento */
+.bento{display:grid;gap:14px;grid-template-columns:repeat(4,1fr);grid-template-areas:"robo robo awards year" "robo robo teams teams" "part photo photo photo"}
+.tile{position:relative;border-radius:var(--r-xl);overflow:hidden;background:#fff;padding:clamp(22px,2.6vw,32px);display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-height:240px}
+.tile .big{font-family:var(--display);font-weight:800;font-size:clamp(52px,6.4vw,92px);line-height:.9;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.tile p{font-weight:600;font-size:17px;line-height:1.35;max-width:22ch}
+.tile small{display:block;color:var(--muted);font-weight:500;font-size:14.5px;margin-top:6px}
+.t-robo{grid-area:robo;min-height:520px;color:#fff;padding:0}
+.t-robo img,.t-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.t-robo:hover img,.t-photo:hover img{transform:scale(1.05)}
+.t-robo .cap{position:relative;margin-top:auto;padding:clamp(22px,2.6vw,32px);background:linear-gradient(transparent,rgba(12,29,68,.85));display:grid;gap:10px}
+.t-robo h3{font-size:clamp(28px,3.2vw,44px);font-weight:800;max-width:14ch}
+.t-robo .link{color:#fff}
+.t-awards{grid-area:awards;background:linear-gradient(150deg,#ff51af,#d91c83 55%,#a3105f);color:#fff}
+.t-awards small{color:rgba(255,255,255,.82)}
+.t-year{grid-area:year}
+.t-teams{grid-area:teams;background:var(--navy);color:#fff;flex-direction:row;align-items:flex-end}
+.t-teams small{color:#c3cde6}
+.squares{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;flex:none;width:min(46%,230px)}
+.squares i{aspect-ratio:1;border-radius:7px;background:rgba(255,255,255,.12);transition:background .4s,transform .6s var(--spring);transition-delay:calc(var(--i) * 45ms)}
+.in .squares i,.no-io .squares i{transform:scale(1)}
+.squares i.lit{background:var(--pink-l)}
+.t-part{grid-area:part}
+.t-photo{grid-area:photo;padding:0;min-height:280px}
+@media(max-width:900px){
+  .bento{grid-template-columns:1fr 1fr;grid-template-areas:"robo robo" "awards year" "teams teams" "part part" "photo photo"}
+  .t-robo{min-height:420px}
+  .t-teams{flex-direction:column;align-items:stretch}
+  .squares{width:100%;grid-template-columns:repeat(9,1fr);gap:5px}
+}
+@media(max-width:480px){.tile{min-height:200px;border-radius:24px}.tile p{font-size:15.5px}}
+
+/* tilt cards */
+.tilt{transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateZ(0);transition:transform .7s var(--spring),box-shadow .4s;transform-style:preserve-3d}
+.tilt.tilting{transition:transform .08s linear,box-shadow .4s;box-shadow:0 30px 60px -30px rgba(12,29,68,.55)}
+.tilt::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(500px circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.28),transparent 45%);opacity:0;transition:opacity .4s;z-index:3}
+.tilt.tilting::after{opacity:1}
+
+/* projects carousel */
+.rail-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:min(420px,84vw);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);padding:10px var(--pad) 30px;scrollbar-width:none;cursor:grab;overscroll-behavior-x:contain}
+.rail::-webkit-scrollbar{display:none}
+.rail.drag{scroll-snap-type:none;cursor:grabbing;user-select:none}
+.rail.drag *{pointer-events:none}
+.pcard{scroll-snap-align:start;position:relative;border-radius:var(--r-xl);padding:clamp(26px,3vw,36px);min-height:480px;display:flex;flex-direction:column;gap:16px;background:#fff;color:#12295b;overflow:hidden}
+.pcard:nth-child(3n+2){background:linear-gradient(160deg,#24458f,#16306a);color:#fff}
+.pcard:nth-child(3n+3){background:linear-gradient(160deg,#ff5fb6,#d91c83);color:#fff}
+.pcard .cat{font-weight:600;font-size:15px;color:var(--pink)}
+.pcard:nth-child(3n+2) .cat{color:var(--pink-l)}
+.pcard:nth-child(3n+3) .cat{color:#ffe0f0}
+.pcard h3{font-size:clamp(30px,3vw,40px);font-weight:800}
+.pcard p{font-size:16.5px;line-height:1.55;opacity:.85}
+.pcard .metric{margin-top:auto;font-family:var(--display);font-weight:800;font-size:clamp(24px,2.4vw,30px);line-height:1.1;letter-spacing:-.02em;padding-top:18px;border-top:1px solid currentColor;border-color:rgba(127,127,127,.25)}
+.pcard .metric .link{font-family:var(--body);font-size:17px}
+.rail-ctl{display:flex;align-items:center;gap:10px}
+.dots{display:flex;gap:6px;margin-right:8px}
+.dots i{width:8px;height:8px;border-radius:999px;background:rgba(255,255,255,.3);transition:width .5s var(--spring),background .3s}
+.dots i.on{width:26px;background:#fff}
+.navy .round{background:rgba(255,255,255,.12);color:#fff;box-shadow:var(--glass-edge)}
+.navy .round:hover{background:var(--pink)}
+
+.goals{display:grid;gap:14px;margin-top:clamp(56px,8vw,100px)}
+@media(min-width:900px){.goals{grid-template-columns:1.1fr repeat(3,1fr)}}
+.goal{border-radius:var(--r-l);padding:26px;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);position:relative}
+.goal strong{display:block;font-family:var(--display);font-weight:800;font-size:clamp(46px,5vw,68px);line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums;background:linear-gradient(180deg,#fff,#ffb3d9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.goal p{color:#c3cde6;margin-top:8px}
+.goal-intro{padding:6px 10px 6px 0;display:grid;gap:14px;align-content:start}
+.goal-intro h3{font-size:clamp(28px,3vw,40px);font-weight:800}
+
+/* robot: expanding media */
+.robot .head{margin-bottom:clamp(36px,5vw,64px)}
+.expand{--p:0}
+.stage{position:relative;height:min(84vh,56.25vw);min-height:360px;overflow:hidden;background:#0c1d44;color:#fff;touch-action:pan-y;
+  clip-path:inset(0 calc((1 - var(--p)) * var(--inset,6%)) round calc((1 - var(--p)) * 32px + 0px))}
+@media(max-width:700px){.stage{height:auto;aspect-ratio:4/5;min-height:0;--inset:20px}}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s;transform:scale(calc(1.12 - var(--p) * .12))}
+.stage img.on{opacity:1}
+.stage .ui{position:absolute;inset:0;padding:18px calc((1 - var(--p)) * var(--inset,6%) + 18px);display:flex;flex-direction:column;justify-content:space-between;pointer-events:none}
+.stage .ui>*{pointer-events:auto}
+.stage .top{display:flex;justify-content:space-between;align-items:center}
+.glass-pill{padding:8px 14px;border-radius:999px;background:rgba(12,29,68,.45);-webkit-backdrop-filter:blur(16px) saturate(170%);backdrop-filter:blur(16px) saturate(170%);box-shadow:var(--glass-edge);font-size:13.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.arrows{display:flex;gap:8px}
+.arrow{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:#fff;background:rgba(12,29,68,.45);-webkit-backdrop-filter:blur(16px) saturate(170%);backdrop-filter:blur(16px) saturate(170%);box-shadow:var(--glass-edge);transition:transform .55s var(--spring),background .2s}
+.arrow:hover{background:rgba(217,28,131,.85)}
+.arrow:active{transform:scale(.9);transition-duration:.12s}
+.arrow svg{width:18px;height:18px}
+.stage .cap{align-self:flex-start;max-width:min(560px,100%);font-weight:600;font-size:15px;padding:10px 16px;border-radius:16px;background:rgba(12,29,68,.45);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:var(--glass-edge)}
+.thumbs{display:flex;gap:8px;justify-content:center;margin-top:18px}
+.thumbs button{width:min(64px,calc((100vw - 80px)/6));aspect-ratio:1;flex:none;border-radius:16px;overflow:hidden;opacity:.5;border:2px solid transparent;transition:transform .55s var(--spring),opacity .2s,border-color .2s}
+.thumbs button[aria-current=true]{opacity:1;border-color:var(--pink)}
+.thumbs button:hover{opacity:1}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.cycle{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:clamp(40px,6vw,72px);counter-reset:c}
+.cycle li{counter-increment:c;border-radius:var(--r-l);background:var(--gray);padding:22px 22px 24px;font-family:var(--display);font-weight:700;font-size:clamp(20px,2.2vw,28px);letter-spacing:-.02em;display:grid;gap:22px;transition:background .4s,color .4s,transform .6s var(--spring)}
+.cycle li::before{content:counter(c);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:15px;background:#fff;color:var(--navy);font-variant-numeric:tabular-nums;transition:background .4s,color .4s}
+.cycle li.on{background:var(--navy);color:#fff;transform:translateY(-6px)}
+.cycle li.on::before{background:var(--pink);color:#fff}
+@media(max-width:700px){.cycle{grid-template-columns:1fr 1fr}}
+.robot .center-link{text-align:center;margin-top:36px}
+
+/* awards */
+.awards{position:relative;overflow:hidden;isolation:isolate}
+.awards .aurora{opacity:.35}
+.awards>.wrap{position:relative;z-index:1}
+.total{display:grid;justify-items:center;text-align:center;gap:10px;margin-bottom:clamp(40px,6vw,72px)}
+.total strong{font-family:var(--display);font-weight:800;font-size:clamp(150px,26vw,340px);line-height:.8;letter-spacing:-.07em;font-variant-numeric:tabular-nums;background:linear-gradient(180deg,#fff 20%,#ff8cc8 70%,#d91c83);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .04em}
+.total span{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.8vw,36px);letter-spacing:-.02em}
+.total p{color:var(--muted);max-width:52ch;font-size:clamp(17px,1.5vw,19px)}
+.route{position:relative;display:grid;grid-template-columns:repeat(3,1fr);margin:0 auto 22px;max-width:900px}
+.route::before,.route .fill{content:"";position:absolute;left:0;top:11px;height:3px;border-radius:3px}
+.route::before{right:0;background:rgba(255,255,255,.18)}
+.route .fill{background:linear-gradient(90deg,var(--pink),var(--pink-l));width:0;transition:width .8s var(--spring)}
+.stop{position:relative;text-align:left;padding:40px 8px 0 0;font-family:var(--display);font-weight:700;font-size:clamp(17px,2.2vw,24px);line-height:1.1;color:var(--muted);transition:color .2s,transform .55s var(--spring)}
+.stop::before{content:"";position:absolute;left:0;top:0;width:25px;height:25px;border-radius:50%;background:var(--navy);border:3px solid rgba(255,255,255,.35);transition:border-color .3s,background .3s,transform .55s var(--spring)}
+.stop.passed::before{border-color:var(--pink-l)}
+.stop[aria-selected=true]{color:#fff}
+.stop[aria-selected=true]::before{border-color:var(--pink-l);background:var(--pink-l);transform:scale(1.2);box-shadow:0 0 0 8px rgba(255,81,175,.18)}
+.stop small{display:block;font-family:var(--body);font-weight:500;font-size:14px;margin-top:4px}
+.a-panel{max-width:900px;margin-inline:auto;border-radius:var(--r-xl);padding:clamp(24px,4vw,44px);display:grid;gap:24px;background:rgba(255,255,255,.08);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 0 0 1px rgba(255,255,255,.1)}
+.a-panel+.a-panel{margin-top:16px}
+.js .a-panel{margin-top:0}.js .a-panel[hidden]{display:none}
+@media(min-width:800px){.a-panel{grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}}
+.a-panel h3{font-size:clamp(26px,3vw,38px);font-weight:800}
+.a-panel h3+p{color:var(--muted);margin-top:10px}
+.a-list li{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
+.a-list li:last-child{border-bottom:0}
+.a-list b{font-family:var(--display);font-size:clamp(18px,2vw,23px);font-weight:700}
+.cups{display:flex;gap:4px;align-items:center;color:var(--pink-l);flex:none}
+.cups svg{width:22px;height:22px}
+.cups em{font-style:normal;font-weight:700;font-size:13px;margin-left:6px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.12)}
+.celebrate{display:grid;gap:14px;margin-top:clamp(40px,6vw,72px)}
+@media(min-width:760px){.celebrate{grid-template-columns:1.3fr 1fr 1fr}}
+.shot{position:relative;overflow:hidden;border-radius:var(--r-l);background:#0c1d44}
+.shot img{width:100%;height:100%;object-fit:cover}
+.celebrate .shot{aspect-ratio:4/3}
+.shot figcaption{position:absolute;inset:auto 0 0 0;padding:44px 18px 16px;color:#fff;font-weight:600;font-size:14.5px;line-height:1.3;background:linear-gradient(transparent,rgba(12,29,68,.88));z-index:2}
+
+/* team */
+.about{display:grid;gap:36px;margin-bottom:clamp(56px,8vw,110px)}
+@media(min-width:900px){.about{grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}}
+.about h2{margin-bottom:24px}
+.about p+p{margin-top:16px}
+.about p{color:var(--muted);max-width:58ch;font-size:18px}
+.about .link{margin-top:26px}
+.about .shot{aspect-ratio:4/5;border-radius:var(--r-xl)}
+.team-h{font-size:clamp(28px,3.4vw,44px);font-weight:800}
+.members{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin:28px 0 20px}
+.member{position:relative;overflow:hidden;border-radius:var(--r-l);background:var(--gray);padding:24px;min-height:220px;display:flex;flex-direction:column;justify-content:flex-end}
+.member .initial{position:absolute;right:-6px;top:-34px;font-family:var(--display);font-weight:800;font-size:170px;line-height:1;color:rgba(18,41,91,.07);transition:transform .8s var(--spring),color .4s}
+.member:hover .initial{transform:translate(-6px,6px) scale(1.05);color:rgba(217,28,131,.14)}
+.member b{position:relative;font-family:var(--display);font-size:28px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.member span{position:relative;color:var(--muted);font-size:15.5px;line-height:1.35;margin-top:6px}
+.mission{margin-top:clamp(64px,9vw,130px);text-align:center;display:grid;gap:24px;justify-items:center}
+.mission h2{font-size:clamp(38px,6.6vw,92px);max-width:15ch;letter-spacing:-.045em;background:linear-gradient(100deg,#12295b 20%,#d91c83 60%,#ff51af);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.06em}
+.mission p:not(.eyebrow){max-width:56ch;color:var(--muted);font-size:clamp(17px,1.5vw,20px)}
+
+/* gallery */
+.g-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+.chips{display:flex;flex-wrap:wrap;gap:4px;padding:5px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.chip{padding:10px 16px;border-radius:999px;font-weight:600;font-size:15px;display:inline-flex;gap:8px;align-items:baseline;transition:transform .55s var(--spring),background .25s,color .25s}
+.chip i{font-style:normal;font-size:12.5px;opacity:.6;font-variant-numeric:tabular-nums}
+.chip[aria-pressed=true]{background:var(--navy);color:#fff;box-shadow:0 6px 16px -8px rgba(12,29,68,.6)}
+.grid{columns:2;column-gap:10px}
+@media(min-width:700px){.grid{columns:3;column-gap:14px}}
+@media(min-width:1100px){.grid{columns:4}}
+.gtile{display:block;width:100%;margin:0 0 10px;border-radius:var(--r-m);overflow:hidden;position:relative;break-inside:avoid;background:#dfe5ef;transition:transform .55s var(--spring)}
+@media(min-width:700px){.gtile{margin-bottom:14px;border-radius:20px}}
+.gtile:active{transform:scale(.97);transition-duration:.12s}
+.gtile img{width:100%;transition:transform .8s var(--ease)}
+.gtile:hover img,.gtile:focus-visible img{transform:scale(1.06)}
+.gtile span{position:absolute;inset:auto 0 0 0;padding:40px 14px 12px;background:linear-gradient(transparent,rgba(12,29,68,.9));color:#fff;font-size:13.5px;line-height:1.3;text-align:left;opacity:0;transform:translateY(8px);transition:opacity .3s,transform .5s var(--spring)}
+.gtile:hover span,.gtile:focus-visible span{opacity:1;transform:none}
+.gtile[hidden]{display:none}
+.gtile.pop{animation:popIn .6s var(--spring) backwards}
+@keyframes popIn{from{opacity:0;transform:scale(.9)}}
+
+dialog.lb{border:0;padding:0;background:transparent;color:#fff;width:100vw;height:100dvh;max-width:none;max-height:none}
+dialog.lb::backdrop{background:rgba(12,29,68,.86);-webkit-backdrop-filter:blur(24px) saturate(150%);backdrop-filter:blur(24px) saturate(150%)}
+.lb-in{height:100%;display:grid;grid-template-rows:auto 1fr auto;padding:14px}
+.lb-top{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
+.lb-close{height:44px;padding:0 18px;border-radius:999px;font-weight:700;background:rgba(255,255,255,.12);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:var(--glass-edge);transition:transform .55s var(--spring),background .2s}
+.lb-close:hover{background:#fff;color:var(--navy)}
+.lb-fig{min-height:0;display:grid;place-items:center;padding:12px 0;position:relative}
+.lb-fig img{max-height:100%;max-width:100%;object-fit:contain;border-radius:16px;will-change:transform}
+.lb-nav{position:absolute;top:50%;margin-top:-26px}
+.lb-prev{left:0}.lb-next{right:0}
+.lb-cap{text-align:center;padding:4px 10px 10px;color:#d5def2;min-height:2.6em}
+
+/* sponsor */
+.seg{display:grid;grid-template-columns:repeat(4,1fr);position:relative;max-width:620px;margin:0 auto 22px;background:var(--gray);border-radius:999px;padding:5px;box-shadow:inset 0 1px 2px rgba(18,41,91,.08)}
+.seg button{position:relative;z-index:1;padding:13px 4px;border-radius:999px;font-weight:700;font-size:clamp(14px,1.6vw,17px);transition:color .3s,transform .55s var(--spring)}
+.seg button[aria-selected=true]{color:#fff}
+.seg .thumb{position:absolute;top:5px;bottom:5px;left:5px;width:calc((100% - 10px)/4);border-radius:999px;background:var(--navy);box-shadow:0 4px 12px -2px rgba(18,41,91,.45),inset 0 1px 0 rgba(255,255,255,.2);transition:transform .6s var(--spring)}
+.seg.moving .thumb{animation:squish .45s ease}
+@keyframes squish{40%{scale:1.08 .88}}
+.plan-box{border-radius:var(--r-xl);background:var(--gray);display:grid;overflow:hidden;position:relative}
+@media(min-width:900px){.plan-box{grid-template-columns:1.15fr .85fr}}
+.plans{padding:clamp(26px,4vw,52px)}
+.plan{display:grid;gap:20px}
+.plan+.plan{margin-top:40px}
+.js .plan{margin-top:0}.js .plan[hidden]{display:none}
+.plan h3{font-size:clamp(30px,3.4vw,42px);font-weight:800}
+.price{font-family:var(--display);font-weight:800;font-size:clamp(54px,7vw,92px);line-height:1;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.price small{font-size:.32em;letter-spacing:0;margin-right:8px;color:var(--muted);vertical-align:.9em}
+.reach{display:grid;gap:10px}
+.reach b{font-family:var(--display);font-size:20px}
+.schools{display:grid;grid-template-columns:repeat(20,1fr);gap:4px;max-width:440px}
+.schools i{height:16px;border-radius:5px;background:var(--line);transition:background .3s,transform .5s var(--spring);transition-delay:calc(var(--i) * 25ms)}
+.schools i.on{background:var(--pink);transform:scaleY(1.15)}
+.perks li{padding:12px 0 12px 32px;border-bottom:1px solid var(--line);position:relative}
+.perks li:last-child{border-bottom:0}
+.perks li::before{content:"";position:absolute;left:0;top:14px;width:20px;height:20px;border-radius:50%;background:var(--pink)}
+.perks li::after{content:"";position:absolute;left:6px;top:20px;width:8px;height:4px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg)}
+.plan .cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.shirt-pane{position:relative;overflow:hidden;isolation:isolate;background:var(--navy);color:#fff;padding:clamp(26px,4vw,44px);display:grid;gap:18px;align-content:center;justify-items:center;text-align:center}
+.shirt-pane .aurora{opacity:.45}
+.shirts{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px;width:100%;max-width:380px}
+.shirts svg{width:100%;height:auto;filter:drop-shadow(0 18px 24px rgba(0,0,0,.35))}
+.shirts figcaption{font-size:14px;color:#c3cde6;margin-top:6px;font-weight:600}
+.tee{fill:#fff}.tee-trim{fill:var(--navy)}
+.logo-slot{fill:var(--pink);opacity:0;transform-box:fill-box;transform-origin:center;transform:scale(.6);transition:opacity .35s,transform .6s var(--spring)}
+.logo-txt{font:700 9px var(--body);fill:#fff;text-anchor:middle;opacity:0;transition:opacity .35s}
+[data-plan=prata] .s-back-s,[data-plan=ouro] .s-back-l,[data-plan=diamante] .s-front-l{opacity:1;transform:none}
+[data-plan=prata] .t-back-s,[data-plan=ouro] .t-back-l,[data-plan=diamante] .t-front-l{opacity:1}
+.shirt-msg{position:relative;font-family:var(--display);font-weight:700;font-size:20px;line-height:1.2;min-height:2.4em;max-width:22ch}
+.everywhere{margin-top:clamp(36px,5vw,56px);display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center}
+.everywhere p{font-family:var(--display);font-weight:700;font-size:20px;margin-right:6px}
+.ways{display:grid;gap:14px;margin-top:clamp(36px,5vw,56px)}
+@media(min-width:900px){.ways{grid-template-columns:1fr 1fr}}
+.way{position:relative;border-radius:var(--r-xl);padding:clamp(26px,3.4vw,40px);background:var(--gray);display:grid;gap:14px;align-content:start;overflow:hidden}
+.way p{color:var(--muted)}
+.pix{display:flex;gap:8px;flex-wrap:wrap}
+.pix code{flex:1 1 220px;min-width:0;font:600 15px var(--body);padding:14px 16px;border-radius:14px;background:#fff;overflow-wrap:anywhere;user-select:all;box-shadow:inset 0 0 0 1px var(--line)}
+.status{min-height:1.5em;font-weight:600;color:var(--pink);font-size:15px}
+.pill.on-gray{background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+
+/* contact */
+.contact{position:relative;overflow:hidden;isolation:isolate}
+.contact .aurora{opacity:.3}
+.contact>.wrap{position:relative;z-index:1}
+.contact-grid{display:grid;gap:40px}
+@media(min-width:900px){.contact-grid{grid-template-columns:1fr 1fr;gap:72px;align-items:start}}
+.contact h2{margin-bottom:22px}
+.c-list{margin-top:32px;display:grid;gap:10px}
+.c-list li{padding:16px 20px;border-radius:var(--r-m);background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);display:grid;gap:2px;transition:background .25s}
+.c-list li:hover{background:rgba(255,255,255,.12)}
+.c-list small{color:var(--muted);font-size:14px}
+.c-list a,.c-list li>span{font-family:var(--display);font-weight:700;font-size:clamp(17px,1.9vw,21px);overflow-wrap:anywhere}
+form.card{border-radius:var(--r-xl);padding:clamp(24px,3.6vw,42px);display:grid;gap:16px;align-content:start;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.field{display:grid;gap:6px}
+.field label{font-weight:600;font-size:15px}
+.field input,.field select,.field textarea{width:100%;padding:14px 16px;border-radius:14px;border:0;background:var(--gray);font-size:16px;box-shadow:inset 0 0 0 1px transparent;transition:box-shadow .2s,background .2s}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;background:#fff;box-shadow:inset 0 0 0 2px var(--navy)}
+.field .err{color:#b8146d;font-size:14px;font-weight:600;display:none}
+.field.bad .err{display:block}.field.bad input{box-shadow:inset 0 0 0 2px #b8146d}
+.preview{font-size:14.5px;color:var(--muted);background:var(--gray);border-radius:14px;padding:14px 16px;white-space:pre-wrap;position:relative}
+.preview::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;border-radius:4px;background:var(--pink)}
+form .btn{width:100%}
+
+/* footer */
+footer{padding:64px 0 32px}
+.f-grid{display:grid;gap:32px}
+@media(min-width:800px){.f-grid{grid-template-columns:1.4fr 1fr 1fr}}
+footer .tag{font-family:var(--display);font-weight:800;font-size:clamp(26px,3vw,38px);line-height:1.05;letter-spacing:-.03em;margin-top:18px;max-width:16ch}
+footer h4{margin:0 0 12px;font-size:15px;font-family:var(--body)}
+footer li{margin-bottom:8px;color:var(--muted)}
+footer a:hover{color:var(--pink)}
+.f-bot{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+.top-btn{position:fixed;right:16px;bottom:16px;z-index:90;width:50px;height:50px;border-radius:50%;color:#fff;display:grid;place-items:center;background:rgba(217,28,131,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:var(--glass-edge),0 12px 28px -10px rgba(217,28,131,.9);opacity:0;visibility:hidden;transform:translateY(14px) scale(.8);transition:opacity .3s,visibility .3s,transform .6s var(--spring)}
+.top-btn.show{opacity:1;visibility:visible;transform:none}
+.top-btn:active{transform:scale(.9);transition-duration:.12s}
+.top-btn svg{width:20px;height:20px}
+.hap{position:fixed;left:-200px;top:0;width:1px;height:1px;opacity:0;pointer-events:none}
+
+/* reveal on scroll */
+.js .rv{opacity:0;translate:0 40px;transition:opacity .9s var(--ease) var(--d,0s),translate 1.1s var(--ease) var(--d,0s),scale 1.1s var(--ease) var(--d,0s),transform .7s var(--spring),box-shadow .4s,background .4s,color .4s}
+.js .rv.zoom{translate:0 30px;scale:.94}
+.js .rv.in{opacity:1;translate:none;scale:none}
+.js .rv.tilting{transition:opacity .9s var(--ease) var(--d,0s),translate 1.1s var(--ease) var(--d,0s),scale 1.1s var(--ease) var(--d,0s),transform .08s linear,box-shadow .4s}
+.js .p-panel.show,.js .a-panel.show,.js .plan.show{animation:pop .6s var(--spring)}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.985)}}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+  .js .hero-in>.hero-photo{animation:none!important}
+  .js .rv,.js .hero-in>*,.js .hero-in>div>*{opacity:1!important;transform:none!important;translate:none!important;scale:none!important}
+  .stage{clip-path:none}
+}
+@media print{.header,.top-btn,.progress{display:none}}
+</style>
 </head>
 <body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-<header class="header">
-  <a class="brand" href="#inicio" aria-label="Instituto Sunset — Página inicial"><span class="brand-crest" aria-hidden="true"></span><span>INSTITUTO <b>SUNSET</b><small>EDUCAÇÃO · TECNOLOGIA · IMPACTO</small></span></a>
-  <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span>☰</span></button>
-  <nav id="navigation" aria-label="Navegação principal">
-    <a href="#inicio" aria-current="page">Início</a><a href="#projetos">Nossos projetos</a><a href="#conquistas">Conquistas</a><a href="#ajudar">Patrocine</a><a href="#sobre">Nossa equipe</a>
-  </nav>
-  <a href="#ajudar" class="header-cta">Seja parte disso <span>↗</span></a>
-</header>
-<main id="conteudo">
-<section class="page active" id="inicio" aria-labelledby="title-inicio">
-  <div class="hero">
-    <div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> DE ESCADA, PERNAMBUCO, PARA O MUNDO</p>
-      <h1 id="title-inicio" tabindex="-1">O futuro começa<br>com uma<br><em>oportunidade.</em></h1>
-      <p class="hero-description">Somos o Instituto Sunset. Conectamos educação, tecnologia e pessoas para ampliar oportunidades na Mata Sul de Pernambuco. Nossa história carrega a experiência e o compromisso social da equipe Unity Sunset #22660.</p>
-      <div class="actions"><a class="button" href="#projetos">Explore nossos projetos <span>↗</span></a><a class="text-link" href="#ajudar">Apoie essa missão <span>→</span></a></div>
-      <div class="hero-stats" title="Indicadores registrados no portfólio BIOBUZZ regional da equipe"><div><strong>2022<span>↗</span></strong><span>O início da nossa história</span></div><div><strong>17<span>★</span></strong><span>Equipes no projeto social</span></div><div><strong>130+<span>♡</span></strong><span>Participantes no portfólio</span></div></div>
+<a class="skip" href="#conteudo" data-en="Skip to content">Pular para o conteúdo</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="header" id="header">
+  <div class="bar">
+    <a class="brand" href="#inicio" aria-label="Instituto Sunset — início">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="32" fill="#12295b"/><path d="M19 20v19q0 11 13 11t13-11V20h-8v19q0 4-5 4t-5-4V20Z" fill="#fff"/><path d="m22 14 5-4 5 4 5-4 5 4" fill="none" stroke="#ff51af" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Instituto Sunset</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <button class="grabber" id="grabber" type="button" aria-label="Fechar menu"><i aria-hidden="true"></i></button>
+      <a href="#projetos" data-en="Projects">Projetos</a>
+      <a href="#robo" data-en="Robot">Robô</a>
+      <a href="#conquistas" data-en="Awards">Conquistas</a>
+      <a href="#sobre" data-en="Team">Equipe</a>
+      <a href="#galeria" data-en="Gallery">Galeria</a>
+      <a href="#ajudar" data-en="Sponsor">Patrocine</a>
+      <a href="#contato" data-en="Contact">Contato</a>
+    </nav>
+    <div class="tools">
+      <button class="tool" id="lang" type="button" aria-label="Switch to English" title="English">EN</button>
+      <button class="tool burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+      <a class="btn pink" href="#ajudar" data-en="Become a partner">Seja parceiro</a>
     </div>
-    <div class="hero-visual"><img src="assets/image-17.jpg" alt="Equipe Unity Sunset reunida com o robô e troféus no estande do festival de robótica" fetchpriority="high"><div class="photo-shade"></div><span class="photo-label">UMA EQUIPE. INFINITAS POSSIBILIDADES.</span><div class="visual-bottom"><span>UNIDOS PELA<br><b>PRÓXIMA DESCOBERTA.</b></span><span class="outline-star" aria-hidden="true">✳</span></div><span class="image-index">01 / UNITY EM AÇÃO</span></div>
   </div>
-  <div class="values-strip"><span>EDUCAÇÃO QUE TRANSFORMA</span><i>✦</i><span>CIÊNCIA & TECNOLOGIA</span><i>✦</i><span>IMPACTO SOCIAL</span><i>✦</i><span>SESI ESCADA · PE</span></div>
-  <div class="intro-band"><p class="eyebrow">INSTITUTO SUNSET · NOSSA ESSÊNCIA</p><h2>Oportunidades que<br>mudam trajetórias.</h2><div><p>Do primeiro protótipo às ações sociais, cada desafio é uma oportunidade de aprender, compartilhar e abrir caminhos para outros jovens.</p><a class="text-link" href="#sobre">Conheça a equipe e nossa história <span>↗</span></a></div></div>
-  <div class="home-pictures"><figure><img src="assets/image-18.jpg" alt="Integrantes trabalhando juntos no robô durante uma competição" loading="lazy"><figcaption>Engenharia que nasce da colaboração.</figcaption></figure><figure><img src="assets/image-14.jpg" alt="Unity Sunset celebrando o primeiro lugar no prêmio Inspiração" loading="lazy"><figcaption>Conquistas que pertencem a todos nós.</figcaption></figure></div>
+</header>
+
+<main id="conteudo">
+
+<!-- HERO -->
+<section class="hero" id="inicio" aria-labelledby="t-inicio">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap hero-in" id="heroIn">
+    <div>
+      <p class="origin"><i aria-hidden="true"></i><span data-en="From Escada, Pernambuco, to the world">De Escada, Pernambuco, para o mundo</span></p>
+      <h1 id="t-inicio" data-en="The future starts with an opportunity.">O futuro começa com uma oportunidade.</h1>
+      <p class="lede" data-en="We are Instituto Sunset. We connect education, technology and people to widen opportunities in the Mata Sul of Pernambuco. Our story carries the experience and social commitment of FTC team Unity Sunset #22660.">Somos o Instituto Sunset. Conectamos educação, tecnologia e pessoas para ampliar oportunidades na Mata Sul de Pernambuco. Nossa história carrega a experiência e o compromisso social da equipe Unity Sunset #22660.</p>
+      <div class="actions">
+        <a class="btn pink" href="#projetos" data-en="Explore our projects">Explore nossos projetos</a>
+        <a class="btn glass" href="#ajudar" data-en="Support this mission">Apoie essa missão</a>
+      </div>
+    </div>
+    <figure class="hero-photo tilt" id="heroPhoto"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-img="17" width="1091" height="726" fetchpriority="high" alt="Equipe Unity Sunset reunida com o robô e troféus no estande do festival de robótica"><figcaption data-en="One team. <em>Endless possibilities.</em>">Uma equipe. <em>Infinitas possibilidades.</em></figcaption></figure>
+  </div>
 </section>
-<section class="page" id="projetos" aria-labelledby="title-projetos" hidden>
-  <div class="section-heading"><p class="eyebrow">01 / NOSSOS PROJETOS</p><h1 id="title-projetos" tabindex="-1">Ideias em movimento.<br><em>Impacto de verdade.</em></h1><p>A tecnologia ganha sentido quando chega às pessoas. Nossa missão é democratizar o acesso à educação tecnológica na Mata Sul de Pernambuco.</p></div>
-<div class="impact-heading"><p class="eyebrow">EDUCAÇÃO QUE CHEGA MAIS LONGE</p><h2>Projetos para abrir caminhos.<br><em>Pessoas para transformar histórias.</em></h2><p>Iniciativas documentadas no portfólio BIOBUZZ da Unity Sunset, que dão base à trajetória do Instituto Sunset.</p></div><div class="impact-projects"><article><span>01 / INFÂNCIA E TECNOLOGIA</span><h2>Robótica em Ação</h2><p>Oficinas práticas com FLL Discover aproximam crianças da ciência por meio da experimentação, da criatividade e do trabalho em equipe.</p><strong>17 equipes criadas</strong></article><article><span>02 / EDUCAÇÃO INCLUSIVA</span><h2>Explorando a FIRST</h2><p>Material de apoio a famílias e educadores, com atividades e recursos visuais para ampliar a participação de crianças neurodivergentes.</p><strong>Aprender de diferentes maneiras</strong></article><article><span>03 / CONHECIMENTO QUE SE MULTIPLICA</span><h2>Formação de educadores</h2><p>Uma trilha de formação em planejamento, aplicação da FLL Discover, condução de encontros e acompanhamento das equipes.</p><strong>24 horas de formação · 7 educadores</strong></article><article><span>04 / COMUNIDADE PRESENTE</span><h2>Família em Ação</h2><p>Encontros para compartilhar a evolução das crianças, integrar famílias e educadores e celebrar descobertas, com apresentações e atividades.</p><strong>Vínculos que sustentam o aprendizado</strong></article><article><span>05 / COLABORAÇÃO NO NORDESTE</span><h2>OxeTC</h2><p>Comunidade criada em parceria com a equipe FTBEN #21077 para conectar equipes FTC do Nordeste, compartilhar conhecimento e oferecer apoio.</p><strong>Mais de 15 equipes apoiadas</strong></article><article><span>06 / DESENVOLVIMENTO DE TALENTOS</span><h2>Equipe Unity Sunset</h2><p>A engenharia, a programação e a liderança se encontram na equipe #22660. A competição é também um espaço de formação e troca.</p><a class="text-link" href="#sobre">Conheça nossa equipe ↗</a></article></div><p class="impact-source">Resultados registrados no portfólio BIOBUZZ regional enviado. Não representam uma medição em tempo real do instituto.</p>  <article class="project-feature"><div class="project-photo"><img src="assets/image-22.jpg" alt="Detalhes dos mecanismos do robô da equipe Unity Sunset" loading="lazy"><span class="photo-label">ENGENHARIA · PROGRAMAÇÃO · COLABORAÇÃO</span></div><div class="project-copy"><span class="small-label">01 — NA ARENA</span><h2>Um robô.<br>Muitas descobertas.</h2><p>Projetar, construir, programar e aprimorar. No FIRST Tech Challenge, desenvolvemos soluções e aprendemos a transformar desafios em conhecimento compartilhado.</p><p>A experiência na arena fortalece habilidades técnicas e humanas que também impulsionam os projetos sociais.</p><a href="#conquistas" class="text-link">Veja onde essa jornada nos levou <span>↗</span></a></div></article>
-  <div class="project-grid"><article><span class="small-label">02 — NA COMUNIDADE</span><h2>Robótica em Ação</h2><p>Levamos a robótica a comunidades com poucas oportunidades, aproximando crianças da ciência e da tecnologia desde a infância.</p><p>O projeto busca expandir a FIRST na Mata Sul, formar equipes de FLL Discover e capacitar educadores.</p></article><article><span class="small-label">03 — PARA TODOS</span><h2>Robótica para neurodivergentes</h2><p>Uma iniciativa que aproxima a robótica de novos públicos. Entre as metas da equipe está realizar um torneio interno com as clínicas assistidas pelo projeto.</p><span class="tag">Inclusão e aprendizagem</span></article></div>
-  <div class="goals"><p class="eyebrow">NOSSO PRÓXIMO PASSO</p><h2>O impacto que<br>queremos alcançar.</h2><div class="goal-numbers"><div><strong>5.000+</strong><p>estudantes a impactar</p></div><div><strong>5+</strong><p>novas equipes em escolas públicas</p></div><div><strong>62%</strong><p>de expansão no alcance do projeto</p></div></div><p class="source-note">Metas de expansão apresentadas na proposta de patrocínio. Os resultados da edição BIOBUZZ estão destacados nos projetos acima; as metas não representam um contador em tempo real.</p><a class="button light" href="#ajudar">Ajude a tornar isso possível <span>↗</span></a></div>
+
+<!-- BENTO -->
+<section class="sec gray" aria-labelledby="t-essencia">
+  <div class="wrap">
+    <div class="head rv">
+      <h2 id="t-essencia" data-en="Opportunities that change paths.">Oportunidades que mudam trajetórias.</h2>
+      <p class="lede" data-en="From the first prototype to our social actions, every challenge is a chance to learn, share and open paths for other young people.">Do primeiro protótipo às ações sociais, cada desafio é uma oportunidade de aprender, compartilhar e abrir caminhos para outros jovens.</p>
+    </div>
+    <div class="bento">
+      <a class="tile t-robo tilt rv zoom" href="#robo">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-img="18" width="1280" height="854" loading="lazy" alt="Integrantes trabalhando juntos no robô durante uma competição">
+        <div class="cap"><h3 data-en="Engineering born from collaboration.">Engenharia que nasce da colaboração.</h3><span class="link"><span data-en="Meet the robot">Conheça o robô</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div>
+      </a>
+      <a class="tile t-awards tilt rv" style="--d:.08s" href="#conquistas">
+        <span class="big" data-count="14">14</span>
+        <p><span data-en="awards">prêmios</span><small data-en="in regional, national and international stages">em etapas regionais, nacionais e internacionais</small></p>
+      </a>
+      <div class="tile t-year tilt rv" style="--d:.16s">
+        <span class="big">2022</span>
+        <p data-en="The start of our story">O início da nossa história</p>
+      </div>
+      <div class="tile t-teams tilt rv" style="--d:.1s">
+        <div><span class="big" data-count="17">17</span><p><span data-en="teams created">equipes criadas</span><small data-en="by the Robotics in Action project">pelo projeto Robótica em Ação</small></p></div>
+        <div class="squares" id="squares" aria-hidden="true"></div>
+      </div>
+      <div class="tile t-part tilt rv">
+        <span class="big" data-count="130" data-suffix="+">130+</span>
+        <p data-en="Participants in the portfolio">Participantes no portfólio</p>
+      </div>
+      <figure class="tile t-photo tilt rv" style="--d:.08s"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-img="14" width="1280" height="854" loading="lazy" alt="Unity Sunset celebrando o primeiro lugar no prêmio Inspiração"><figcaption style="position:absolute;inset:auto 0 0 0;padding:48px 24px 20px;color:#fff;font-weight:600;z-index:2;background:linear-gradient(transparent,rgba(12,29,68,.85))" data-en="Achievements that belong to all of us.">Conquistas que pertencem a todos nós.</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:20px" data-en="Figures recorded in the team's regional BIOBUZZ portfolio. They are not a real-time measurement by the institute.">Indicadores registrados no portfólio BIOBUZZ regional da equipe. Não representam uma medição em tempo real do instituto.</p>
+  </div>
 </section>
-<section class="page" id="conquistas" aria-labelledby="title-conquistas" hidden>
-  <div class="achievement-hero"><img src="assets/image-14.jpg" alt="Equipe e apoiadores celebram o prêmio Inspiração no palco" loading="lazy"><div><p class="eyebrow">02 / CONQUISTAS</p><h1 id="title-conquistas" tabindex="-1">Uma conquista inspira.<br><em>Um legado transforma.</em></h1><p>14 prêmios. Uma história escrita em equipe.</p></div></div>
-  <div class="awards-heading"><h2>De Pernambuco<br>para o mundo.</h2><p>Da estreia em POWER PLAY à temporada BIOBUZZ, cada reconhecimento traduz trabalho, resiliência e vontade de ir além.</p></div>
-  <div class="awards-grid"><article><span class="award-mark">✦</span><p class="eyebrow">REGIONAIS</p><h3>O começo de<br>grandes histórias.</h3><ul><li><b>1º Inspire Award</b><span>4×</span></li><li><b>Winning Alliance</b><span>2×</span></li><li><b>Finalist Alliance</b><span>2×</span></li></ul></article><article><span class="award-mark">✦</span><p class="eyebrow">NACIONAIS</p><h3>Nosso talento<br>cruzando fronteiras.</h3><ul><li><b>1º Think Award</b><span>2×</span></li><li><b>2º Connect Award</b><span>1×</span></li><li><b>Finalist Alliance</b><span>1×</span></li></ul></article><article class="international"><span class="award-mark">✦</span><p class="eyebrow">INTERNACIONAIS</p><h3>Pernambuco<br>no cenário mundial.</h3><ul><li><b>1º Motivate Award</b><span>EU</span></li><li><b>1º Think Award</b><span>USA</span></li></ul></article></div>
-  <div class="celebration-grid"><figure><img src="assets/image-16.jpg" alt="Celebração da Aliança Finalista no palco" loading="lazy"><figcaption>Aliança finalista. Cooperação que faz a diferença.</figcaption></figure><figure><img src="assets/image-23.jpg" alt="Equipes classificadas para a etapa nacional" loading="lazy"><figcaption>Mais uma etapa. O mesmo espírito de equipe.</figcaption></figure></div>
-  <div class="page-cta"><h2>Faça parte das<br>próximas conquistas.</h2><a href="#ajudar" class="button">Quero apoiar a Unity <span>↗</span></a></div>
+
+<!-- PROJECTS -->
+<section class="sec navy" id="projetos" aria-labelledby="t-projetos" style="padding-bottom:clamp(80px,10vw,140px)">
+  <div class="wrap">
+    <div class="head rv">
+      <h2 id="t-projetos" data-en="Ideas in motion. Real impact.">Ideias em movimento. Impacto de verdade.</h2>
+      <div class="rail-head">
+        <p class="lede" data-en="Technology makes sense when it reaches people. Our mission is to democratize access to technology education in the Mata Sul of Pernambuco.">A tecnologia ganha sentido quando chega às pessoas. Nossa missão é democratizar o acesso à educação tecnológica na Mata Sul de Pernambuco.</p>
+        <div class="rail-ctl">
+          <div class="dots" id="pdots" aria-hidden="true"></div>
+          <button class="round" id="pprev" type="button" aria-label="Projeto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></svg></button>
+          <button class="round" id="pnext" type="button" aria-label="Próximo projeto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rail" id="rail" aria-roledescription="carrossel" aria-label="Projetos" tabindex="0">
+    <article class="pcard tilt" aria-roledescription="slide">
+      <p class="cat" data-en="Childhood and technology">Infância e tecnologia</p>
+      <h3 data-en="Robotics in Action">Robótica em Ação</h3>
+      <p data-en="Hands-on FLL Discover workshops bring children closer to science through experimentation, creativity and teamwork. The project aims to expand FIRST in the Mata Sul, create teams and train educators.">Oficinas práticas com FLL Discover aproximam crianças da ciência por meio da experimentação, da criatividade e do trabalho em equipe. O projeto busca expandir a FIRST na Mata Sul, formar equipes e capacitar educadores.</p>
+      <p class="metric" data-en="17 teams created">17 equipes criadas</p>
+    </article>
+    <article class="pcard tilt" aria-roledescription="slide">
+      <p class="cat" data-en="Inclusive education">Educação inclusiva</p>
+      <h3 data-en="Exploring FIRST">Explorando a FIRST</h3>
+      <p data-en="Support material for families and educators, with activities and visual resources to widen the participation of neurodivergent children. One goal is an internal tournament with the clinics assisted by the project.">Material de apoio a famílias e educadores, com atividades e recursos visuais para ampliar a participação de crianças neurodivergentes. Entre as metas está um torneio interno com as clínicas assistidas pelo projeto.</p>
+      <p class="metric" data-en="Learning in different ways">Aprender de diferentes maneiras</p>
+    </article>
+    <article class="pcard tilt" aria-roledescription="slide">
+      <p class="cat" data-en="Knowledge that multiplies">Conhecimento que se multiplica</p>
+      <h3 data-en="Educator training">Formação de educadores</h3>
+      <p data-en="A training track on planning, applying FLL Discover, running sessions and following up with the teams.">Uma trilha de formação em planejamento, aplicação da FLL Discover, condução de encontros e acompanhamento das equipes.</p>
+      <p class="metric" data-en="24 hours, 7 educators">24 horas, 7 educadores</p>
+    </article>
+    <article class="pcard tilt" aria-roledescription="slide">
+      <p class="cat" data-en="Community present">Comunidade presente</p>
+      <h3 data-en="Family in Action">Família em Ação</h3>
+      <p data-en="Gatherings to share the children's progress, bring families and educators together and celebrate discoveries, with presentations and activities.">Encontros para compartilhar a evolução das crianças, integrar famílias e educadores e celebrar descobertas, com apresentações e atividades.</p>
+      <p class="metric" data-en="Bonds that sustain learning">Vínculos que sustentam o aprendizado</p>
+    </article>
+    <article class="pcard tilt" aria-roledescription="slide">
+      <p class="cat" data-en="Talent development">Desenvolvimento de talentos</p>
+      <h3 data-en="Team Unity Sunset">Equipe Unity Sunset</h3>
+      <p data-en="Engineering, programming and leadership meet in team #22660. Competition is also a space for growth and exchange.">A engenharia, a programação e a liderança se encontram na equipe #22660. A competição é também um espaço de formação e troca.</p>
+      <p class="metric"><a class="link" href="#sobre" style="color:inherit"><span data-en="Meet our team">Conheça nossa equipe</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></p>
+    </article>
+  </div>
+  <div class="wrap">
+    <p class="note" data-en="Results recorded in the regional BIOBUZZ portfolio submitted by the team.">Resultados registrados no portfólio BIOBUZZ regional enviado pela equipe.</p>
+    <div class="goals">
+      <div class="goal-intro rv">
+        <p class="eyebrow" style="margin:0" data-en="Our next step">Nosso próximo passo</p>
+        <h3 data-en="The impact we want to reach.">O impacto que queremos alcançar.</h3>
+        <a class="btn pink" style="justify-self:start" href="#ajudar" data-en="Help make it happen">Ajude a tornar isso possível</a>
+      </div>
+      <div class="goal tilt rv" style="--d:.06s"><strong data-count="5000" data-suffix="+" data-sep="1">5.000+</strong><p data-en="students to reach">estudantes a impactar</p></div>
+      <div class="goal tilt rv" style="--d:.12s"><strong data-count="5" data-suffix="+">5+</strong><p data-en="new teams in public schools">novas equipes em escolas públicas</p></div>
+      <div class="goal tilt rv" style="--d:.18s"><strong data-count="62" data-suffix="%">62%</strong><p data-en="expansion of the project's reach">de expansão no alcance do projeto</p></div>
+    </div>
+    <p class="note" style="margin-top:16px" data-en="Expansion goals presented in the sponsorship proposal. They are targets, not a live counter.">Metas de expansão apresentadas na proposta de patrocínio. São metas, não um contador em tempo real.</p>
+  </div>
 </section>
-<section class="page" id="ajudar" aria-labelledby="title-ajudar" hidden>
-  <div class="section-heading sponsor-heading"><p class="eyebrow">03 / COMO VOCÊ PODE NOS AJUDAR</p><h1 id="title-ajudar" tabindex="-1">Seu apoio move<br><em>o próximo futuro.</em></h1><p>Invista em acesso à educação, formação de educadores e desenvolvimento de jovens talentos. Sua parceria viabiliza materiais, oficinas e a continuidade dos nossos projetos.</p><a class="text-link" href="assets/proposta-de-patrocinio.pdf" target="_blank" rel="noopener">Conheça a proposta completa <span>↓ PDF</span></a></div>
-  <div class="sponsor-intro"><h2>Escolha como<br>fazer a diferença.</h2><p>Quatro formas de conectar sua marca a uma iniciativa que transforma. Os valores e as contrapartidas abaixo seguem a proposta da equipe Unity Sunset, base para uma conversa sobre sua parceria com o Instituto Sunset.</p></div>
-  <div class="plans"><article><span class="plan-icon bronze">◇</span><h3>Bronze</h3><p class="price"><small>R$</small> 3.000</p><p class="plan-impact">Projeto em <b>7 escolas</b></p><ul><li>Marca nos veículos de divulgação</li><li>Visibilidade nas ações da equipe</li><li>Categoria sem aplicação na camisa</li></ul><a class="plan-link" data-plan="Bronze" href="mailto:unity.sunset22660@hotmail.com?subject=Patroc%C3%ADnio%20Bronze">Apoiar com Bronze <span>↗</span></a></article><article><span class="plan-icon silver">◇</span><h3>Prata</h3><p class="price"><small>R$</small> 5.000</p><p class="plan-impact">Projeto em <b>10 escolas</b></p><ul><li>Marca nos veículos de divulgação</li><li>Logo nas camisas da equipe</li><li>Aplicação menor nas costas</li></ul><a class="plan-link" data-plan="Prata" href="mailto:unity.sunset22660@hotmail.com?subject=Patroc%C3%ADnio%20Prata">Apoiar com Prata <span>↗</span></a></article><article><span class="plan-icon gold">◇</span><h3>Ouro</h3><p class="price"><small>R$</small> 10.000</p><p class="plan-impact">Projeto em <b>15 escolas</b></p><ul><li>Marca nos veículos de divulgação</li><li>Logo nas camisas da equipe</li><li>Aplicação maior nas costas</li></ul><a class="plan-link" data-plan="Ouro" href="mailto:unity.sunset22660@hotmail.com?subject=Patroc%C3%ADnio%20Ouro">Apoiar com Ouro <span>↗</span></a></article><article class="diamond"><span class="plan-icon">✦</span><h3>Diamante</h3><p class="price"><small>R$</small> 15.000</p><p class="plan-impact">Projeto em <b>20 escolas</b></p><ul><li>Marca nos veículos de divulgação</li><li>Logo nas camisas da equipe</li><li>Aplicação maior na frente</li></ul><a class="plan-link" data-plan="Diamante" href="mailto:unity.sunset22660@hotmail.com?subject=Patroc%C3%ADnio%20Diamante">Apoiar com Diamante <span>↗</span></a></article></div>
-  <div class="benefits"><p class="eyebrow">UMA PARCERIA QUE APARECE E ACONTECE</p><div><span>Workshops e palestras</span><span>Redes sociais</span><span>Projetos sociais</span><span>Robô e torneios</span></div></div>
-  <div class="support-options"><article><span class="small-label">CADA CONTRIBUIÇÃO IMPORTA</span><h2>Apoie com<br>qualquer valor.</h2><p>A chave abaixo consta na proposta da Unity Sunset. Converse com a equipe para direcionar sua contribuição aos projetos do Instituto Sunset.</p><label for="pix-key">Chave Pix — e-mail</label><div class="pix-box"><input id="pix-key" value="unity.sunset22660@hotmail.com" readonly aria-label="Chave Pix"><button id="copy-pix" type="button">Copiar</button></div><p id="copy-status" role="status" class="copy-status"></p></article><article><span class="small-label">MATERIAIS TAMBÉM TRANSFORMAM</span><h2>Peças, recursos.<br>Novas possibilidades.</h2><p>Você também pode doar ou comprar materiais para a construção do robô, os projetos sociais e o estande da equipe.</p><a class="text-link" href="mailto:unity.sunset22660@hotmail.com?subject=Doa%C3%A7%C3%A3o%20de%20materiais">Converse com a equipe <span>↗</span></a><p class="contact-note">Mônica Augusta · Técnica<br><a href="tel:+558191709505">+55 81 9170-9505</a><br><a href="mailto:unity.sunset22660@hotmail.com">unity.sunset22660@hotmail.com</a></p></article></div>
+
+<!-- ROBOT -->
+<section class="sec white robot" id="robo" aria-labelledby="t-robo">
+  <div class="wrap head center rv">
+    <p class="eyebrow" style="margin:0" data-en="In the arena, FIRST Tech Challenge">Na arena, FIRST Tech Challenge</p>
+    <h2 id="t-robo" data-en="One robot. Many discoveries.">Um robô. Muitas descobertas.</h2>
+    <p class="lede" data-en="In the FIRST Tech Challenge we develop solutions and learn to turn challenges into shared knowledge. The experience in the arena strengthens technical and human skills that also drive our social projects.">No FIRST Tech Challenge, desenvolvemos soluções e aprendemos a transformar desafios em conhecimento compartilhado. A experiência na arena fortalece habilidades técnicas e humanas que também impulsionam os projetos sociais.</p>
+  </div>
+  <div class="expand" id="expand" aria-roledescription="carrossel" aria-label="Fotos do robô">
+    <div class="stage" id="stage">
+      <div class="ui">
+        <div class="top">
+          <span class="glass-pill" id="rnum">1 / 6</span>
+          <div class="arrows">
+            <button class="arrow" id="rprev" type="button" aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></svg></button>
+            <button class="arrow" id="rnext" type="button" aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></button>
+          </div>
+        </div>
+        <p class="cap" id="rcap" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="thumbs" id="rthumbs"></div>
+    <ol class="cycle" id="cycle">
+      <li class="rv" data-en="Design">Projetar</li>
+      <li class="rv" style="--d:.06s" data-en="Build">Construir</li>
+      <li class="rv" style="--d:.12s" data-en="Program">Programar</li>
+      <li class="rv" style="--d:.18s" data-en="Improve">Aprimorar</li>
+    </ol>
+    <p class="center-link"><a class="link" href="#conquistas"><span data-en="See where this journey has taken us">Veja onde essa jornada nos levou</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></p>
+  </div>
 </section>
-<section class="page" id="sobre" aria-labelledby="title-sobre" hidden>
-  <div class="about-hero"><div><p class="eyebrow">04 / SOBRE NÓS</p><h1 id="title-sobre" tabindex="-1">Pessoas que fazem<br><em>o futuro acontecer.</em></h1><p>O Instituto Sunset nasce da vontade de ampliar o alcance da educação tecnológica. Essa trajetória é construída a partir da experiência da Unity Sunset #22660, equipe criada em 2022 para conectar jovens à ciência, tecnologia, engenharia e matemática.</p><p>Nossa trajetória tem raízes no SESI Escada, em Pernambuco. Reunimos o aprendizado da equipe, de mentores, educadores e voluntários para construir um legado de inclusão e desenvolvimento.</p><a href="https://www.instagram.com/unitysunset_ftc/" class="text-link" target="_blank" rel="noopener">Acompanhe @unitysunset_ftc <span>↗</span></a></div><figure><img src="assets/image-24.jpg" alt="Integrantes da Unity Sunset em frente ao SESI Escada" loading="lazy"><figcaption>SESI ESCADA · PERNAMBUCO · BRASIL</figcaption></figure></div>
-<div class="team-section"><p class="eyebrow">CONHECIMENTO QUE SE COMPLEMENTA</p><h2>Uma equipe.<br>Muitas formas de contribuir.</h2><p>Integrantes e áreas apresentados no portfólio regional BIOBUZZ da Unity Sunset.</p><div class="team-list"><article><b>Larissa</b><span>Liderança e programação</span></article><article><b>Felipe</b><span>Programação</span></article><article><b>Hélio</b><span>Engenharia mecânica</span></article><article><b>Eduardo</b><span>CAD e desenvolvimento do robô</span></article><article><b>Júlia</b><span>Sustentabilidade e gestão</span></article></div><p>Mentores, técnicos, educadores e voluntários ampliam essa rede com formação, acompanhamento e troca de experiências.</p></div>  <div class="mission"><p class="eyebrow">NOSSA MISSÃO</p><h2>Mostrar que a robótica<br>é um universo para <em>todos.</em></h2><p>Democratizar o acesso à educação tecnológica, capacitar educadores e aproximar crianças da robótica desde a infância. É por isso que seguimos em movimento.</p></div>
-  <div class="gallery-heading"><div><p class="eyebrow">MEMÓRIAS QUE NOS MOVEM</p><h2>A Unity pelas<br>nossas lentes.</h2></div><div class="filters" role="group" aria-label="Filtrar galeria"><button class="selected" data-filter="todos" aria-pressed="true">Todas <span>20</span></button><button data-filter="equipe" aria-pressed="false">Equipe</button><button data-filter="robo" aria-pressed="false">Robô & arena</button><button data-filter="conquistas" aria-pressed="false">Conquistas</button></div></div>
-  <div class="gallery" id="gallery"></div>
-  <div class="page-cta"><h2>Vamos construir<br>essa história juntos?</h2><a href="#ajudar" class="button">Faça parte da Unity <span>↗</span></a></div>
+
+<!-- AWARDS -->
+<section class="sec navy awards" id="conquistas" aria-labelledby="t-conquistas">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="total rv zoom">
+      <strong data-count="14">14</strong>
+      <h2 id="t-conquistas" style="font-size:clamp(30px,4vw,52px)" data-en="awards. From Pernambuco to the world.">prêmios. De Pernambuco para o mundo.</h2>
+      <p data-en="From our debut in POWER PLAY to the BIOBUZZ season, each recognition reflects work, resilience and the will to go further.">Da estreia em POWER PLAY à temporada BIOBUZZ, cada reconhecimento traduz trabalho, resiliência e vontade de ir além.</p>
+    </div>
+
+    <div class="route rv" role="tablist" aria-label="Níveis de competição" id="route">
+      <span class="fill" id="rfill" aria-hidden="true"></span>
+      <button class="stop" role="tab" type="button"><span data-en="Regional">Regionais</span><small data-en="8 awards">8 prêmios</small></button>
+      <button class="stop" role="tab" type="button"><span data-en="National">Nacionais</span><small data-en="4 awards">4 prêmios</small></button>
+      <button class="stop" role="tab" type="button"><span data-en="International">Internacionais</span><small data-en="2 awards">2 prêmios</small></button>
+    </div>
+    <div id="apanels" class="rv">
+      <article class="a-panel" role="tabpanel">
+        <div><h3 data-en="The start of great stories.">O começo de grandes histórias.</h3><p data-en="Regional stages">Etapas regionais</p></div>
+        <ul class="a-list">
+          <li><b>1º Inspire Award</b><span class="cups" data-n="4"></span></li>
+          <li><b>Winning Alliance</b><span class="cups" data-n="2"></span></li>
+          <li><b>Finalist Alliance</b><span class="cups" data-n="2"></span></li>
+        </ul>
+      </article>
+      <article class="a-panel" role="tabpanel">
+        <div><h3 data-en="Our talent crossing borders.">Nosso talento cruzando fronteiras.</h3><p data-en="National stages">Etapas nacionais</p></div>
+        <ul class="a-list">
+          <li><b>1º Think Award</b><span class="cups" data-n="2"></span></li>
+          <li><b>2º Connect Award</b><span class="cups" data-n="1"></span></li>
+          <li><b>Finalist Alliance</b><span class="cups" data-n="1"></span></li>
+        </ul>
+      </article>
+      <article class="a-panel" role="tabpanel">
+        <div><h3 data-en="Pernambuco on the world stage.">Pernambuco no cenário mundial.</h3><p data-en="International stages">Etapas internacionais</p></div>
+        <ul class="a-list">
+          <li><b>1º Motivate Award</b><span class="cups" data-n="1" data-tag="EU"></span></li>
+          <li><b>1º Think Award</b><span class="cups" data-n="1" data-tag="USA"></span></li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="celebrate">
+      <figure class="shot tilt rv"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-img="14" width="1280" height="854" loading="lazy" alt="Equipe e apoiadores celebram o prêmio Inspiração no palco"><figcaption data-en="First place, Inspire award.">Primeiro lugar no prêmio Inspiração.</figcaption></figure>
+      <figure class="shot tilt rv" style="--d:.08s"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-img="16" width="1280" height="854" loading="lazy" alt="Celebração da Aliança Finalista no palco"><figcaption data-en="Finalist alliance. Cooperation that makes the difference.">Aliança finalista. Cooperação que faz a diferença.</figcaption></figure>
+      <figure class="shot tilt rv" style="--d:.16s"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-img="23" width="1280" height="844" loading="lazy" alt="Equipes classificadas para a etapa nacional"><figcaption data-en="Another stage. The same team spirit.">Mais uma etapa. O mesmo espírito de equipe.</figcaption></figure>
+    </div>
+  </div>
 </section>
-<section class="institution-contact" aria-labelledby="contact-heading"><div><p class="eyebrow">VAMOS CONVERSAR</p><h2 id="contact-heading">Uma parceria começa<br>com uma conversa.</h2><p>Conte como você quer participar: patrocínio, materiais, formação ou apoio aos projetos. Nossa equipe conversa com você sobre as possibilidades e os próximos passos.</p><a class="button" href="https://wa.me/5581991709505?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20parceria%20com%20o%20Instituto%20Sunset" target="_blank" rel="noopener">Quero ser parceiro <span>↗</span></a></div><div class="contact-details"><h3>Contato e documentos</h3><a href="mailto:unity.sunset22660@hotmail.com">unity.sunset22660@hotmail.com ↗</a><a href="tel:+558191709505">Mônica Augusta · +55 81 9170-9505 ↗</a><a href="assets/proposta-de-patrocinio.pdf" target="_blank" rel="noopener">Proposta de patrocínio · PDF ↗</a>
-<p>Contatos e dados de apoio da equipe Unity Sunset, conforme os documentos enviados.</p></div></section></main>
-<footer><a class="footer-brand" href="#inicio">INSTITUTO SUNSET <span>EDUCAÇÃO & IMPACTO</span></a><p>Robótica que conecta. Pessoas que transformam.</p><div><a href="https://www.instagram.com/unitysunset_ftc/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.tiktok.com/@unitysunset_ftc" target="_blank" rel="noopener">TikTok ↗</a><a href="mailto:unity.sunset22660@hotmail.com">E-mail ↗</a></div><small>SESI Escada · Pernambuco, Brasil</small></footer>
-<div class="chapter-bar"><span id="chapter-label">01 — PÁGINA INICIAL</span><span class="chapter-dots" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i><i></i></span><button id="next-page">Nossos projetos <span>→</span></button></div>
-<div id="transition" aria-hidden="true"><img src="assets/image-01.jpg" alt=""></div>
-<dialog id="lightbox" aria-label="Galeria de fotografias"><div class="lightbox-top"><span id="photo-count"></span><button id="close-lightbox" aria-label="Fechar fotografia">Fechar ×</button></div><button id="prev-photo" aria-label="Fotografia anterior">←</button><figure><img id="lightbox-image" src="assets/image-06.jpg" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button id="next-photo" aria-label="Próxima fotografia">→</button></dialog>
-<noscript><style>.page[hidden]{display:block!important}.chapter-bar,.menu-toggle{display:none}body{padding-bottom:0}</style><p class="noscript-note">Ative o JavaScript para visualizar as transições e a galeria interativa. As seções e os contatos continuam disponíveis.</p></noscript>
+
+<!-- TEAM -->
+<section class="sec white" id="sobre" aria-labelledby="t-sobre">
+  <div class="wrap">
+    <div class="about">
+      <div class="rv">
+        <h2 id="t-sobre" data-en="People who make the future happen.">Pessoas que fazem o futuro acontecer.</h2>
+        <p data-en="Instituto Sunset was born from the will to widen the reach of technology education. This path is built on the experience of Unity Sunset #22660, a team created in 2022 to connect young people to science, technology, engineering and mathematics.">O Instituto Sunset nasce da vontade de ampliar o alcance da educação tecnológica. Essa trajetória é construída a partir da experiência da Unity Sunset #22660, equipe criada em 2022 para conectar jovens à ciência, tecnologia, engenharia e matemática.</p>
+        <p data-en="Our roots are at SESI Escada, in Pernambuco. We bring together what the team, mentors, educators and volunteers have learned to build a legacy of inclusion and development.">Nossa trajetória tem raízes no SESI Escada, em Pernambuco. Reunimos o aprendizado da equipe, de mentores, educadores e voluntários para construir um legado de inclusão e desenvolvimento.</p>
+        <a class="link" href="https://www.instagram.com/unitysunset_ftc/" target="_blank" rel="noopener"><span data-en="Follow @unitysunset_ftc on Instagram">Acompanhe @unitysunset_ftc no Instagram</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </div>
+      <figure class="shot tilt rv zoom"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-img="24" width="960" height="1280" loading="lazy" alt="Integrantes da Unity Sunset em frente ao SESI Escada"><figcaption>SESI Escada, Pernambuco, Brasil</figcaption></figure>
+    </div>
+
+    <h3 class="team-h rv" data-en="One team. Many ways to contribute.">Uma equipe. Muitas formas de contribuir.</h3>
+    <ul class="members">
+      <li class="member tilt rv"><span class="initial" aria-hidden="true">L</span><b>Larissa</b><span data-en="Leadership and programming">Liderança e programação</span></li>
+      <li class="member tilt rv" style="--d:.06s"><span class="initial" aria-hidden="true">F</span><b>Felipe</b><span data-en="Programming">Programação</span></li>
+      <li class="member tilt rv" style="--d:.12s"><span class="initial" aria-hidden="true">H</span><b>Hélio</b><span data-en="Mechanical engineering">Engenharia mecânica</span></li>
+      <li class="member tilt rv" style="--d:.18s"><span class="initial" aria-hidden="true">E</span><b>Eduardo</b><span data-en="CAD and robot development">CAD e desenvolvimento do robô</span></li>
+      <li class="member tilt rv" style="--d:.24s"><span class="initial" aria-hidden="true">J</span><b>Júlia</b><span data-en="Sustainability and management">Sustentabilidade e gestão</span></li>
+    </ul>
+    <p class="note" data-en="Members and areas as presented in Unity Sunset's regional BIOBUZZ portfolio. Mentors, coaches, educators and volunteers widen this network.">Integrantes e áreas apresentados no portfólio regional BIOBUZZ da Unity Sunset. Mentores, técnicos, educadores e voluntários ampliam essa rede.</p>
+
+    <div class="mission rv">
+      <p class="eyebrow" style="margin:0" data-en="Our mission">Nossa missão</p>
+      <h2 data-en="To show that robotics is a universe for everyone.">Mostrar que a robótica é um universo para todos.</h2>
+      <p data-en="Democratize access to technology education, train educators and bring children closer to robotics from an early age. That is why we keep moving.">Democratizar o acesso à educação tecnológica, capacitar educadores e aproximar crianças da robótica desde a infância. É por isso que seguimos em movimento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="sec gray" id="galeria" aria-labelledby="t-galeria">
+  <div class="wrap">
+    <div class="g-head rv">
+      <h2 id="t-galeria" data-en="Unity through our lenses.">A Unity pelas nossas lentes.</h2>
+      <div class="chips" role="group" aria-label="Filtrar galeria" id="filters">
+        <button class="chip" type="button" data-f="todos" aria-pressed="true"><span data-en="All">Todas</span><i></i></button>
+        <button class="chip" type="button" data-f="equipe" aria-pressed="false"><span data-en="Team">Equipe</span><i></i></button>
+        <button class="chip" type="button" data-f="robo" aria-pressed="false"><span data-en="Robot">Robô</span><i></i></button>
+        <button class="chip" type="button" data-f="conquistas" aria-pressed="false"><span data-en="Awards">Conquistas</span><i></i></button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <noscript><p class="note">Ative o JavaScript para ver a galeria de fotos.</p></noscript>
+  </div>
+</section>
+
+<!-- SPONSOR -->
+<section class="sec white" id="ajudar" aria-labelledby="t-ajudar">
+  <div class="wrap">
+    <div class="head center rv">
+      <h2 id="t-ajudar" data-en="Your support moves the next future.">Seu apoio move o próximo futuro.</h2>
+      <p class="lede" data-en="Invest in access to education, educator training and the development of young talent. Your partnership funds materials, workshops and the continuity of our projects.">Invista em acesso à educação, formação de educadores e desenvolvimento de jovens talentos. Sua parceria viabiliza materiais, oficinas e a continuidade dos nossos projetos.</p>
+      <a class="link" href="https://felipe03052010.github.io/unity-sunset-site/assets/proposta-de-patrocinio.pdf" target="_blank" rel="noopener"><span data-en="Read the full proposal (PDF)">Conheça a proposta completa (PDF)</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    </div>
+
+    <div class="seg rv" role="tablist" aria-label="Cotas de patrocínio" id="seg">
+      <span class="thumb" id="segthumb" aria-hidden="true"></span>
+      <button role="tab" type="button">Bronze</button>
+      <button role="tab" type="button" data-en="Silver">Prata</button>
+      <button role="tab" type="button" data-en="Gold">Ouro</button>
+      <button role="tab" type="button" data-en="Diamond">Diamante</button>
+    </div>
+
+    <div class="plan-box rv" id="planbox" data-plan="bronze">
+      <div class="plans" id="plans">
+        <article class="plan" role="tabpanel" data-plan="bronze" data-schools="7">
+          <h3>Bronze</h3>
+          <p class="price"><small>R$</small>3.000</p>
+          <div class="reach"><b data-en="Project in 7 schools">Projeto em 7 escolas</b><div class="schools" aria-hidden="true"></div></div>
+          <ul class="perks"><li data-en="Brand in our publicity channels">Marca nos veículos de divulgação</li><li data-en="Visibility in the team's actions">Visibilidade nas ações da equipe</li><li data-en="Tier without logo on the jersey">Categoria sem aplicação na camisa</li></ul>
+          <div class="cta"><a class="btn pink" target="_blank" rel="noopener" href="https://wa.me/5581991709505?text=Ol%C3%A1!%20Tenho%20interesse%20no%20patroc%C3%ADnio%20Bronze%20(R%24%203.000)%20da%20Unity%20Sunset%20%2F%20Instituto%20Sunset." data-en="Sponsor with Bronze">Apoiar com Bronze</a><a class="link" href="mailto:unity.sunset22660@hotmail.com?subject=Patroc%C3%ADnio%20Bronze" data-en="or by e-mail">ou por e-mail</a></div>
+        </article>
+        <article class="plan" role="tabpanel" data-plan="prata" data-schools="10">
+          <h3 data-en="Silver">Prata</h3>
+          <p class="price"><small>R$</small>5.000</p>
+          <div class="reach"><b data-en="Project in 10 schools">Projeto em 10 escolas</b><div class="schools" aria-hidden="true"></div></div>
+          <ul class="perks"><li data-en="Brand in our publicity channels">Marca nos veículos de divulgação</li><li data-en="Logo on the team jerseys">Logo nas camisas da equipe</li><li data-en="Smaller placement on the back">Aplicação menor nas costas</li></ul>
+          <div class="cta"><a class="btn pink" target="_blank" rel="noopener" href="https://wa.me/5581991709505?text=Ol%C3%A1!%20Tenho%20interesse%20no%20patroc%C3%ADnio%20Prata%20(R%24%205.000)%20da%20Unity%20Sunset%20%2F%20Instituto%20Sunset." data-en="Sponsor with Silver">Apoiar com Prata</a><a class="link" href="mailto:unity.sunset22660@hotmail.com?subject=Patroc%C3%ADnio%20Prata" data-en="or by e-mail">ou por e-mail</a></div>
+        </article>
+        <article class="plan" role="tabpanel" data-plan="ouro" data-schools="15">
+          <h3 data-en="Gold">Ouro</h3>
+          <p class="price"><small>R$</small>10.000</p>
+          <div class="reach"><b data-en="Project in 15 schools">Projeto em 15 escolas</b><div class="schools" aria-hidden="true"></div></div>
+          <ul class="perks"><li data-en="Brand in our publicity channels">Marca nos veículos de divulgação</li><li data-en="Logo on the team jerseys">Logo nas camisas da equipe</li><li data-en="Larger placement on the back">Aplicação maior nas costas</li></ul>
+          <div class="cta"><a class="btn pink" target="_blank" rel="noopener" href="https://wa.me/5581991709505?text=Ol%C3%A1!%20Tenho%20interesse%20no%20patroc%C3%ADnio%20Ouro%20(R%24%2010.000)%20da%20Unity%20Sunset%20%2F%20Instituto%20Sunset." data-en="Sponsor with Gold">Apoiar com Ouro</a><a class="link" href="mailto:unity.sunset22660@hotmail.com?subject=Patroc%C3%ADnio%20Ouro" data-en="or by e-mail">ou por e-mail</a></div>
+        </article>
+        <article class="plan" role="tabpanel" data-plan="diamante" data-schools="20">
+          <h3 data-en="Diamond">Diamante</h3>
+          <p class="price"><small>R$</small>15.000</p>
+          <div class="reach"><b data-en="Project in 20 schools">Projeto em 20 escolas</b><div class="schools" aria-hidden="true"></div></div>
+          <ul class="perks"><li data-en="Brand in our publicity channels">Marca nos veículos de divulgação</li><li data-en="Logo on the team jerseys">Logo nas camisas da equipe</li><li data-en="Larger placement on the front">Aplicação maior na frente</li></ul>
+          <div class="cta"><a class="btn pink" target="_blank" rel="noopener" href="https://wa.me/5581991709505?text=Ol%C3%A1!%20Tenho%20interesse%20no%20patroc%C3%ADnio%20Diamante%20(R%24%2015.000)%20da%20Unity%20Sunset%20%2F%20Instituto%20Sunset." data-en="Sponsor with Diamond">Apoiar com Diamante</a><a class="link" href="mailto:unity.sunset22660@hotmail.com?subject=Patroc%C3%ADnio%20Diamante" data-en="or by e-mail">ou por e-mail</a></div>
+        </article>
+      </div>
+      <div class="shirt-pane" aria-hidden="true">
+        <div class="aurora"><i></i><i></i><i></i></div>
+        <div class="shirts">
+          <figure>
+            <svg viewBox="0 0 120 130"><path class="tee" d="M38 8 12 20 4 46l18 6 4-10v80h68V42l4 10 18-6-8-26L82 8c-4 9-12 13-22 13S42 17 38 8Z"/><path class="tee-trim" d="M38 8c4 9 12 13 22 13s18-4 22-13l-6-2c-3 6-9 9-16 9s-13-3-16-9Z"/><rect class="logo-slot s-front-l" x="34" y="46" width="52" height="30" rx="5"/><text class="logo-txt t-front-l" x="60" y="64">SUA MARCA</text></svg>
+            <figcaption data-en="Front">Frente</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 120 130"><path class="tee" d="M38 8 12 20 4 46l18 6 4-10v80h68V42l4 10 18-6-8-26L82 8c-6 4-14 6-22 6S44 12 38 8Z"/><rect class="logo-slot s-back-l" x="30" y="34" width="60" height="34" rx="5"/><text class="logo-txt t-back-l" x="60" y="54">SUA MARCA</text><rect class="logo-slot s-back-s" x="42" y="84" width="36" height="18" rx="4"/><text class="logo-txt t-back-s" x="60" y="96" style="font-size:6.5px">SUA MARCA</text></svg>
+            <figcaption data-en="Back">Costas</figcaption>
+          </figure>
+        </div>
+        <p class="shirt-msg" id="shirtmsg"></p>
+      </div>
+    </div>
+    <p class="note" style="margin:14px auto 0;text-align:center" data-en="Amounts and benefits follow team Unity Sunset's proposal, the starting point for a conversation about your partnership.">Os valores e as contrapartidas seguem a proposta da equipe Unity Sunset, base para uma conversa sobre sua parceria.</p>
+
+    <div class="everywhere rv">
+      <p data-en="A partnership that shows up:">Uma parceria que aparece:</p>
+      <span class="pill" data-en="Workshops and talks">Workshops e palestras</span>
+      <span class="pill" data-en="Social media">Redes sociais</span>
+      <span class="pill" data-en="Social projects">Projetos sociais</span>
+      <span class="pill" data-en="Robot and tournaments">Robô e torneios</span>
+    </div>
+
+    <div class="ways">
+      <article class="way tilt rv">
+        <h3 data-en="Support with any amount.">Apoie com qualquer valor.</h3>
+        <p data-en="The key below appears in Unity Sunset's proposal. Talk to the team to direct your contribution to the institute's projects.">A chave abaixo consta na proposta da Unity Sunset. Converse com a equipe para direcionar sua contribuição aos projetos do instituto.</p>
+        <p style="font-weight:600;color:var(--ink);font-size:15px" data-en="Pix key (e-mail)">Chave Pix (e-mail)</p>
+        <div class="pix"><code id="pixkey">unity.sunset22660@hotmail.com</code><button class="btn" id="copypix" type="button" data-en="Copy key">Copiar chave</button></div>
+        <p class="status" id="pixstatus" role="status"></p>
+      </article>
+      <article class="way tilt rv" style="--d:.08s">
+        <h3 data-en="Parts, resources. New possibilities.">Peças, recursos. Novas possibilidades.</h3>
+        <p data-en="You can also donate or buy materials for building the robot, the social projects and the team's pit.">Você também pode doar ou comprar materiais para a construção do robô, os projetos sociais e o estande da equipe.</p>
+        <a class="link" target="_blank" rel="noopener" href="https://wa.me/5581991709505?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20doa%C3%A7%C3%A3o%20de%20materiais%20para%20a%20Unity%20Sunset."><span data-en="Talk to the team">Converse com a equipe</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec navy contact" id="contato" aria-labelledby="t-contato">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <h2 id="t-contato" data-en="A partnership starts with a conversation.">Uma parceria começa com uma conversa.</h2>
+      <p class="lede" data-en="Tell us how you want to take part: sponsorship, materials, training or support for the projects. Our team will talk with you about the possibilities and next steps.">Conte como você quer participar: patrocínio, materiais, formação ou apoio aos projetos. Nossa equipe conversa com você sobre as possibilidades e os próximos passos.</p>
+      <ul class="c-list">
+        <li><small>WhatsApp, Mônica Augusta (<span data-en="coach">técnica</span>)</small><a href="https://wa.me/5581991709505" target="_blank" rel="noopener">+55 81 99170-9505</a></li>
+        <li><small>E-mail</small><a href="mailto:unity.sunset22660@hotmail.com">unity.sunset22660@hotmail.com</a></li>
+        <li><small data-en="Document">Documento</small><a href="https://felipe03052010.github.io/unity-sunset-site/assets/proposta-de-patrocinio.pdf" target="_blank" rel="noopener" data-en="Sponsorship proposal (PDF)">Proposta de patrocínio (PDF)</a></li>
+        <li><small data-en="Where we are">Onde estamos</small><span>SESI Escada, Pernambuco, Brasil</span></li>
+      </ul>
+    </div>
+    <form class="card white rv zoom" id="form" novalidate>
+      <h3 data-en="Write your message">Escreva sua mensagem</h3>
+      <p class="note" data-en="Fill it in and we open WhatsApp with the message ready. Nothing is sent until you confirm there.">Preencha e abrimos o WhatsApp com a mensagem pronta. Nada é enviado antes de você confirmar por lá.</p>
+      <div class="field" id="f-name"><label for="name" data-en="Your name">Seu nome</label><input id="name" name="name" autocomplete="name" required><span class="err" data-en="Enter your name so the team knows who is writing.">Informe seu nome para a equipe saber quem está escrevendo.</span></div>
+      <div class="field"><label for="org" data-en="Company or organization (optional)">Empresa ou instituição (opcional)</label><input id="org" name="org" autocomplete="organization"></div>
+      <div class="field"><label for="topic" data-en="How do you want to take part?">Como você quer participar?</label>
+        <select id="topic" name="topic">
+          <option value="patrocínio" data-en="Sponsorship">Patrocínio</option>
+          <option value="doação de materiais" data-en="Donating materials">Doação de materiais</option>
+          <option value="formação de educadores" data-en="Educator training">Formação de educadores</option>
+          <option value="apoio aos projetos sociais" data-en="Supporting the social projects">Apoio aos projetos sociais</option>
+          <option value="outro assunto" data-en="Something else">Outro assunto</option>
+        </select></div>
+      <div class="field"><label for="msg" data-en="Message (optional)">Mensagem (opcional)</label><textarea id="msg" name="msg"></textarea></div>
+      <p class="preview" id="preview" aria-live="polite"></p>
+      <a class="btn pink" id="send" target="_blank" rel="noopener" href="https://wa.me/5581991709505" data-en="Open in WhatsApp">Abrir no WhatsApp</a>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="white">
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="brand" href="#inicio"><svg viewBox="0 0 64 64" aria-hidden="true" style="width:44px;height:44px"><rect width="64" height="64" rx="32" fill="#12295b"/><path d="M19 20v19q0 11 13 11t13-11V20h-8v19q0 4-5 4t-5-4V20Z" fill="#fff"/><path d="m22 14 5-4 5 4 5-4 5 4" fill="none" stroke="#ff51af" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Instituto Sunset</span></a>
+        <p class="tag" data-en="Robotics that connects. People who transform.">Robótica que conecta. Pessoas que transformam.</p>
+      </div>
+      <div>
+        <h4 data-en="Site">Site</h4>
+        <ul>
+          <li><a href="#projetos" data-en="Projects">Projetos</a></li>
+          <li><a href="#robo" data-en="Robot">Robô</a></li>
+          <li><a href="#conquistas" data-en="Awards">Conquistas</a></li>
+          <li><a href="#sobre" data-en="Team">Equipe</a></li>
+          <li><a href="#ajudar" data-en="Sponsor">Patrocine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Follow Unity">Acompanhe a Unity</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/unitysunset_ftc/" target="_blank" rel="noopener">Instagram @unitysunset_ftc</a></li>
+          <li><a href="https://www.tiktok.com/@unitysunset_ftc" target="_blank" rel="noopener">TikTok @unitysunset_ftc</a></li>
+          <li><a href="mailto:unity.sunset22660@hotmail.com">unity.sunset22660@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bot"><span>Unity Sunset #22660, FIRST Tech Challenge</span><span>SESI Escada, Pernambuco, Brasil</span></div>
+  </div>
+</footer>
+
+<button class="top-btn" id="top" type="button" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 15 7-7 7 7"/></svg></button>
+<div class="scrim" id="scrim" aria-hidden="true"></div>
+<input class="hap" type="checkbox" switch id="hap" tabindex="-1" aria-hidden="true"><label class="hap" for="hap" id="haplabel" aria-hidden="true"></label>
+
+<dialog class="lb" id="lb" aria-label="Galeria de fotografias">
+  <div class="lb-in">
+    <div class="lb-top"><span id="lbcount"></span><button class="lb-close" id="lbclose" type="button" data-en="Close">Fechar</button></div>
+    <figure class="lb-fig" id="lbfig">
+      <img id="lbimg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+      <button class="arrow lb-nav lb-prev" id="lbprev" type="button" aria-label="Fotografia anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></svg></button>
+      <button class="arrow lb-nav lb-next" id="lbnext" type="button" aria-label="Próxima fotografia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></button>
+    </figure>
+    <p class="lb-cap" id="lbcap"></p>
+  </div>
+</dialog>
+
+<script>window.IMG={"6":"assets/foto-06.jpg","7":"assets/foto-07.jpg","8":"assets/foto-08.jpg","9":"assets/foto-09.jpg","10":"assets/foto-10.jpg","11":"assets/foto-11.jpg","12":"assets/foto-12.jpg","13":"assets/foto-13.jpg","14":"assets/foto-14.jpg","15":"assets/foto-15.jpg","16":"assets/foto-16.jpg","17":"assets/foto-17.jpg","18":"assets/foto-18.jpg","19":"assets/foto-19.jpg","20":"assets/foto-20.jpg","21":"assets/foto-21.jpg","22":"assets/foto-22.jpg","23":"assets/foto-23.jpg","24":"assets/foto-24.jpg","25":"assets/foto-25.jpg"};</script>
+<script>
+'use strict';
+(function(){
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const root=document.documentElement;
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const img=n=>window.IMG[n];
+$$('img[data-img]').forEach(i=>{i.src=img(+i.dataset.img)});
+let lang='pt';
+const T=(pt,en)=>lang==='en'?en:pt;
+const WA='https://wa.me/5581991709505?text=';
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+const SPRING=CSS.supports('transition-timing-function','linear(0,1)')?getComputedStyle(root).getPropertyValue('--spring').trim():'cubic-bezier(.34,1.56,.64,1)';
+
+/* ---------- data ---------- */
+const photos=[
+ [6,'equipe',960,1280,'A equipe e o robô na Arena SESI de Robótica.','The team and the robot at the SESI Robotics Arena.'],
+ [7,'robo',960,1280,'Concentração e trabalho em equipe nos bastidores da arena.','Focus and teamwork behind the scenes of the arena.'],
+ [8,'equipe',960,1280,'Unity Sunset reunida na Arena SESI de Robótica.','Unity Sunset together at the SESI Robotics Arena.'],
+ [9,'equipe',1280,960,'Equipe, mentores e troféus no estande da Unity Sunset.','Team, mentors and trophies at the Unity Sunset pit.'],
+ [10,'robo',960,1280,'O robô #22660 e seus mecanismos em detalhe.','Robot #22660 and its mechanisms in detail.'],
+ [11,'equipe',960,1280,'Nossa equipe em frente ao SESI Escada.','Our team in front of SESI Escada.'],
+ [12,'conquistas',960,1280,'Integrantes celebrando com os troféus.','Team members celebrating with the trophies.'],
+ [13,'conquistas',960,1280,'Uma conquista compartilhada por toda a equipe.','An achievement shared by the whole team.'],
+ [14,'conquistas',1280,854,'Celebração do primeiro lugar no prêmio Inspiração.','Celebrating first place in the Inspire award.'],
+ [15,'conquistas',1280,854,'Registro em preto e branco da classificação para a etapa nacional.','Black-and-white record of qualifying for the national stage.'],
+ [16,'conquistas',1280,854,'Aliança Finalista: uma conquista construída em cooperação.','Finalist Alliance: an achievement built on cooperation.'],
+ [17,'equipe',1091,726,'A Unity Sunset reunida em seu estande.','Unity Sunset gathered at its pit.'],
+ [18,'robo',1280,854,'Preparação do robô em equipe durante o festival.','Preparing the robot as a team during the festival.'],
+ [19,'robo',1280,854,'Ajustes e colaboração nos mecanismos do robô.','Adjustments and collaboration on the robot mechanisms.'],
+ [20,'equipe',1280,854,'Torcida e energia da Unity na competição.','Unity cheering and energy at the competition.'],
+ [21,'robo',1280,854,'Concentração dos pilotos na arena.','Drivers focused in the arena.'],
+ [22,'robo',1280,854,'Engenharia em detalhe: o robô da Unity Sunset.','Engineering in detail: the Unity Sunset robot.'],
+ [23,'conquistas',1280,844,'Equipes classificadas para a etapa nacional.','Teams qualified for the national stage.'],
+ [24,'equipe',960,1280,'Unity Sunset: unidos no SESI Escada.','Unity Sunset: united at SESI Escada.'],
+ [25,'robo',1280,854,'Pilotos e equipes em ação no festival regional.','Drivers and teams in action at the regional festival.']
+];
+const robotShots=[22,10,19,18,21,25];
+const cap=n=>{const p=photos.find(p=>p[0]===n);return T(p[4],p[5])};
+
+/* ---------- static decorations ---------- */
+$('#squares').innerHTML=Array.from({length:18},(_,i)=>'<i style="--i:'+i+'"'+(i<17?' data-lit':'')+'></i>').join('');
+
+/* ---------- generic tabs ---------- */
+let started=false;
+function tabs(tabEls,panelEls,onChange){
+  started=false;let cur=0;
+  function select(i,focus){
+    cur=(i+tabEls.length)%tabEls.length;
+    tabEls.forEach((t,j)=>{t.setAttribute('aria-selected',j===cur);t.tabIndex=j===cur?0:-1});
+    panelEls.forEach((p,j)=>{p.hidden=j!==cur;p.classList.toggle('show',j===cur&&started)});
+    if(focus)tabEls[cur].focus();
+    if(onChange)onChange(cur);
+  }
+  tabEls.forEach((t,i)=>{
+    const id=t.id||(t.id='tab-'+Math.random().toString(36).slice(2,8));
+    panelEls[i].setAttribute('aria-labelledby',id);
+    t.addEventListener('click',()=>select(i));
+    t.addEventListener('keydown',e=>{
+      if(e.key==='ArrowRight'||e.key==='ArrowDown'){e.preventDefault();select(cur+1,true)}
+      if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();select(cur-1,true)}
+    });
+  });
+  select(0);started=true;
+  return {select};
+}
+
+/* awards */
+const cupSvg='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3h12v2h3v3a4 4 0 0 1-4 4h-.3A6 6 0 0 1 13 14.9V18h3v3H8v-3h3v-3.1A6 6 0 0 1 7.3 12H7a4 4 0 0 1-4-4V5h3Zm0 4H5v1a2 2 0 0 0 1 1.7Zm12 0v2.7A2 2 0 0 0 19 8V7Z"/></svg>';
+$$('.cups').forEach(c=>{const n=+c.dataset.n;c.innerHTML=cupSvg.repeat(n)+'<em>'+(c.dataset.tag||n+'×')+'</em>';c.setAttribute('aria-label',n+(c.dataset.tag?' ('+c.dataset.tag+')':'×'))});
+const stops=$$('#route .stop');
+tabs(stops,$$('#apanels .a-panel'),i=>{stops.forEach((s,j)=>s.classList.toggle('passed',j<i));$('#rfill').style.width=(i/3*100)+'%'});
+
+/* sponsor plans */
+const planEls=$$('#plans .plan');
+planEls.forEach(p=>{const n=+p.dataset.schools;$('.schools',p).innerHTML=Array.from({length:20},(_,i)=>'<i style="--i:'+i+'"'+(i<n?' class="on"':'')+'></i>').join('')});
+const shirtMsgs={
+  bronze:['Sua marca nos veículos de divulgação da equipe.','Your brand in the team\'s publicity channels.'],
+  prata:['Sua marca nas costas da camisa, em aplicação menor.','Your brand on the back of the jersey, smaller size.'],
+  ouro:['Sua marca nas costas da camisa, em aplicação maior.','Your brand on the back of the jersey, larger size.'],
+  diamante:['Sua marca na frente da camisa, em aplicação maior.','Your brand on the front of the jersey, larger size.']};
+function shirtText(){const k=$('#planbox').dataset.plan;$('#shirtmsg').textContent=T(...shirtMsgs[k]);$$('.logo-txt').forEach(t=>t.textContent=T('SUA MARCA','YOUR BRAND'))}
+tabs($$('#seg button[role=tab]'),planEls,i=>{
+  $('#segthumb').style.transform='translateX('+i*100+'%)';
+  const sg=$('#seg');sg.classList.remove('moving');void sg.offsetWidth;sg.classList.add('moving');
+  $('#planbox').dataset.plan=planEls[i].dataset.plan;shirtText();
+});
+
+/* ---------- projects rail ---------- */
+const rail=$('#rail'),cards=$$('.pcard',rail),pdots=$('#pdots');
+pdots.innerHTML=cards.map(()=>'<i></i>').join('');
+function cardW(){return cards[0].getBoundingClientRect().width+16}
+function railState(){
+  const i=clamp(Math.round(rail.scrollLeft/cardW()),0,cards.length-1);
+  $$('i',pdots).forEach((d,j)=>d.classList.toggle('on',j===i));
+  $('#pprev').disabled=rail.scrollLeft<8;$('#pnext').disabled=rail.scrollLeft>rail.scrollWidth-rail.clientWidth-8;
+  cards.forEach((c,j)=>c.setAttribute('aria-label',(j+1)+' / '+cards.length));
+}
+rail.addEventListener('scroll',()=>requestAnimationFrame(railState),{passive:true});
+$('#pprev').addEventListener('click',()=>rail.scrollBy({left:-cardW(),behavior:reduced?'auto':'smooth'}));
+$('#pnext').addEventListener('click',()=>rail.scrollBy({left:cardW(),behavior:reduced?'auto':'smooth'}));
+rail.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();$('#pnext').click()}if(e.key==='ArrowLeft'){e.preventDefault();$('#pprev').click()}});
+(function(){let x0=null,s0=0,moved=false;
+  rail.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0)return;x0=e.clientX;s0=rail.scrollLeft;moved=false});
+  addEventListener('pointermove',e=>{if(x0===null)return;const dx=e.clientX-x0;if(Math.abs(dx)>5&&!moved){moved=true;rail.classList.add('drag')}if(moved)rail.scrollLeft=s0-dx});
+  addEventListener('pointerup',()=>{if(x0===null)return;x0=null;if(moved){const sl=rail.scrollLeft;rail.classList.remove('drag');rail.scrollLeft=sl;const i=Math.round(sl/cardW());rail.scrollTo({left:i*cardW(),behavior:reduced?'auto':'smooth'})}});
+  rail.addEventListener('click',e=>{if(moved){e.preventDefault();e.stopPropagation();moved=false}},true);
+})();
+railState();addEventListener('resize',railState);
+
+/* ---------- robot viewer ---------- */
+const stage=$('#stage'),thumbs=$('#rthumbs');let rIdx=0;
+robotShots.forEach((n,i)=>{
+  const im=new Image();im.alt='';im.dataset.n=n;im.decoding='async';
+  if(i===0){im.src=img(n);im.className='on'}else{im.dataset.src=img(n)}
+  stage.insertBefore(im,$('.ui',stage));
+  const b=document.createElement('button');b.type='button';b.innerHTML='<img loading="lazy" width="64" height="64" alt="" src="'+img(n)+'">';
+  b.addEventListener('click',()=>showRobot(i));thumbs.append(b);
+});
+const rImgs=()=>$$('img[data-n]',stage);
+function showRobot(i){
+  rIdx=(i+robotShots.length)%robotShots.length;
+  rImgs().forEach((im,j)=>{if(j===rIdx&&im.dataset.src){im.src=im.dataset.src;delete im.dataset.src}im.classList.toggle('on',j===rIdx);im.alt=j===rIdx?cap(robotShots[j]):''});
+  $$('button',thumbs).forEach((b,j)=>{b.setAttribute('aria-current',j===rIdx);b.setAttribute('aria-label',T('Ver foto ','View photo ')+(j+1))});
+  $('#rnum').textContent=(rIdx+1)+' / '+robotShots.length;
+  $('#rcap').textContent=cap(robotShots[rIdx]);
+  $$('#cycle li').forEach((li,j)=>li.classList.toggle('on',j===rIdx%4));
+}
+$('#rprev').addEventListener('click',()=>showRobot(rIdx-1));
+$('#rnext').addEventListener('click',()=>showRobot(rIdx+1));
+$('#expand').addEventListener('keydown',e=>{if(e.key==='ArrowLeft')showRobot(rIdx-1);if(e.key==='ArrowRight')showRobot(rIdx+1)});
+swipe(stage,d=>showRobot(rIdx+d));
+showRobot(0);
+function swipe(el,fn){let x=null,y=null;
+  el.addEventListener('touchstart',e=>{x=e.touches[0].clientX;y=e.touches[0].clientY},{passive:true});
+  el.addEventListener('touchend',e=>{if(x===null)return;const dx=e.changedTouches[0].clientX-x,dy=e.changedTouches[0].clientY-y;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.4)fn(dx<0?1:-1);x=null},{passive:true});}
+
+/* ---------- gallery + lightbox ---------- */
+const grid=$('#grid'),lb=$('#lb'),lbimg=$('#lbimg');let filter='todos',sel=0,opener=null;
+photos.forEach((p,i)=>{
+  const b=document.createElement('button');b.type='button';b.className='gtile';b.dataset.c=p[1];
+  b.innerHTML='<img loading="lazy" decoding="async" width="'+p[2]+'" height="'+p[3]+'" src="'+img(p[0])+'" alt=""><span></span>';
+  b.addEventListener('click',()=>openLb(b,i));
+  grid.append(b);
+});
+function galleryText(){$$('.gtile',grid).forEach((b,i)=>{const c=T(photos[i][4],photos[i][5]);$('img',b).alt=c;$('span',b).textContent=c;b.setAttribute('aria-label',T('Ampliar fotografia: ','Enlarge photo: ')+c)})}
+$$('#filters .chip').forEach(f=>{
+  const k=f.dataset.f;$('i',f).textContent=k==='todos'?photos.length:photos.filter(p=>p[1]===k).length;
+  f.addEventListener('click',()=>{filter=k;$$('#filters .chip').forEach(o=>o.setAttribute('aria-pressed',o===f));
+    $$('.gtile',grid).forEach((t,i)=>{const show=k==='todos'||t.dataset.c===k;t.hidden=!show;t.classList.remove('pop');if(show&&!reduced){void t.offsetWidth;t.style.animationDelay=(i%8)*30+'ms';t.classList.add('pop')}})});
+});
+const visible=()=>photos.map((p,i)=>i).filter(i=>filter==='todos'||photos[i][1]===filter);
+function paint(){const p=photos[sel],v=visible(),c=T(p[4],p[5]);lbimg.src=img(p[0]);lbimg.alt=c;$('#lbcap').textContent=c;$('#lbcount').textContent=(v.indexOf(sel)+1)+' / '+v.length}
+function step(d){const v=visible();sel=v[(v.indexOf(sel)+d+v.length)%v.length];paint();
+  if(!reduced&&lbimg.animate)lbimg.animate([{opacity:0,transform:'translateX('+(d*60)+'px) scale(.96)'},{opacity:1,transform:'none'}],{duration:520,easing:SPRING})}
+function flip(fromEl,toEl,reverse){
+  const a=fromEl.getBoundingClientRect(),b=toEl.getBoundingClientRect();if(!a.width||!b.width)return null;
+  const t='translate('+(a.left+a.width/2-(b.left+b.width/2))+'px,'+(a.top+a.height/2-(b.top+b.height/2))+'px) scale('+(a.width/b.width)+','+(a.height/b.height)+')';
+  const k=[{transform:t,borderRadius:'20px'},{transform:'none',borderRadius:'16px'}];
+  return toEl.animate(reverse?k.reverse():k,{duration:reverse?380:620,easing:reverse?'cubic-bezier(.3,0,.2,1)':SPRING,fill:reverse?'forwards':'none'});
+}
+const chrome=()=>$$('.lb-top,.lb-cap,.lb-nav',lb);
+async function openLb(b,i){
+  opener=b;sel=i;paint();
+  if(lb.showModal)lb.showModal();else lb.setAttribute('open','');document.body.classList.add('locked');
+  if(reduced||!lbimg.animate)return;
+  try{await lbimg.decode()}catch(e){}
+  flip($('img',b),lbimg,false);
+  chrome().forEach(el=>el.animate([{opacity:0},{opacity:1}],{duration:300,delay:160,fill:'backwards'}));
+}
+let closing=false;
+function closeLb(){
+  if(closing||!lb.open)return;
+  const tile=$$('.gtile',grid)[sel];opener=tile;
+  const r=tile.getBoundingClientRect(),onScreen=!tile.hidden&&r.bottom>0&&r.top<innerHeight;
+  if(reduced||!lbimg.animate){lb.close();return}
+  closing=true;
+  chrome().forEach(el=>el.animate([{opacity:1},{opacity:0}],{duration:160,fill:'forwards'}));
+  const anim=onScreen?flip($('img',tile),lbimg,true):lbimg.animate([{opacity:1},{opacity:0,transform:'scale(.92)'}],{duration:220,fill:'forwards'});
+  const done=()=>{lb.close();closing=false;lbimg.getAnimations().forEach(a=>a.cancel());chrome().forEach(el=>el.getAnimations().forEach(a=>a.cancel()))};
+  if(anim)anim.onfinish=done;else done();
+}
+$('#lbprev').addEventListener('click',()=>step(-1));$('#lbnext').addEventListener('click',()=>step(1));
+$('#lbclose').addEventListener('click',closeLb);
+lb.addEventListener('cancel',e=>{e.preventDefault();closeLb()});
+lb.addEventListener('close',()=>{document.body.classList.remove('locked');if(opener)opener.focus({preventScroll:true})});
+$('#lbfig').addEventListener('click',e=>{if(e.target===e.currentTarget)closeLb()});
+swipe($('#lbfig'),step);
+document.addEventListener('keydown',e=>{if(lb.open){if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)}else if(e.key==='Escape')closeMenu()});
+
+/* ---------- haptics ---------- */
+(function(){
+  const sel='.btn,.tool,.chip,.round,.seg button,.stop,.arrow,.lb-close,.top-btn,.thumbs button,.gtile,.nav a,.grabber';
+  const canVibrate='vibrate' in navigator,lab=$('#haplabel');
+  const isIOS=/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  let touch=false;
+  document.addEventListener('pointerdown',e=>{touch=e.pointerType==='touch'},{passive:true,capture:true});
+  document.addEventListener('click',e=>{
+    if(!touch||!e.isTrusted||!e.target.closest(sel))return;
+    if(canVibrate){try{navigator.vibrate(8)}catch(_){}}
+    else if(isIOS&&lab){try{lab.click()}catch(_){}}
+  },true);
+  document.addEventListener('touchstart',()=>{},{passive:true});
+})();
+
+/* ---------- 3D tilt ---------- */
+if(!reduced){
+  $$('.tilt').forEach(el=>{
+    let raf=0;
+    el.addEventListener('pointermove',e=>{
+      if(e.pointerType==='touch'&&!e.isPrimary)return;
+      const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+      const max=r.width>500?5:9;
+      cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{
+        el.classList.add('tilting');
+        el.style.setProperty('--ry',((x-.5)*2*max).toFixed(2)+'deg');el.style.setProperty('--rx',((.5-y)*2*max).toFixed(2)+'deg');
+        el.style.setProperty('--gx',(x*100).toFixed(1)+'%');el.style.setProperty('--gy',(y*100).toFixed(1)+'%');
+      });
+    });
+    const reset=()=>{cancelAnimationFrame(raf);el.classList.remove('tilting');el.style.setProperty('--rx','0deg');el.style.setProperty('--ry','0deg')};
+    el.addEventListener('pointerleave',reset);el.addEventListener('pointercancel',reset);el.addEventListener('pointerup',e=>{if(e.pointerType==='touch')reset()});
+  });
+}
+
+/* ---------- menu ---------- */
+const nav=$('#nav'),burger=$('#burger'),header=$('#header'),scrim=$('#scrim');
+function setMenu(o){nav.classList.toggle('open',o);scrim.classList.toggle('on',o);document.body.classList.toggle('menu-open',o);burger.setAttribute('aria-expanded',o);document.body.classList.toggle('locked',o);nav.style.removeProperty('--drag');
+  if(o)setTimeout(()=>$('#grabber').focus({preventScroll:true}),50)}
+function closeMenu(){if(nav.classList.contains('open')){setMenu(false);burger.focus({preventScroll:true})}}
+burger.addEventListener('click',()=>setMenu(!nav.classList.contains('open')));
+scrim.addEventListener('click',closeMenu);
+$('#grabber').addEventListener('click',closeMenu);
+(function(){let y0=null,dy=0;const g=$('#grabber');
+  g.addEventListener('pointerdown',e=>{y0=e.clientY;dy=0;nav.classList.add('dragging');try{g.setPointerCapture(e.pointerId)}catch(_){}});
+  g.addEventListener('pointermove',e=>{if(y0===null)return;dy=Math.max(0,e.clientY-y0);nav.style.setProperty('--drag',dy+'px')});
+  const end=()=>{if(y0===null)return;y0=null;nav.classList.remove('dragging');if(dy>90)closeMenu();else nav.style.removeProperty('--drag')};
+  g.addEventListener('pointerup',end);g.addEventListener('pointercancel',end);
+})();
+nav.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
+matchMedia('(min-width:1101px)').addEventListener('change',()=>setMenu(false));
+
+/* ---------- scroll engine ---------- */
+const heroPhoto=$('#heroPhoto'),heroIn=$('#heroIn'),expand=$('#expand'),progress=$('#progress'),topBtn=$('#top');
+let lastY=0,ticking=false;
+function frame(){
+  ticking=false;const y=scrollY,vh=innerHeight,h=root.scrollHeight-vh;
+  progress.style.transform='scaleX('+(h>0?y/h:0)+')';
+  topBtn.classList.toggle('show',y>vh);
+  if(!document.body.classList.contains('menu-open'))header.classList.toggle('hide',y>vh*.8&&y>lastY+2);
+  if(y<lastY-2)header.classList.remove('hide');
+  lastY=y;
+  if(reduced)return;
+  if(y<vh*1.2){const p=y/vh;heroIn.style.opacity=clamp(1-p*1.3,0,1);heroIn.style.transform='translateY('+(-p*80)+'px)'}
+  const er=expand.getBoundingClientRect();
+  if(er.top<vh&&er.bottom>0){expand.style.setProperty('--p',clamp((vh-er.top)/(vh*.75),0,1).toFixed(3))}
+}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});
+addEventListener('resize',()=>requestAnimationFrame(frame));
+topBtn.addEventListener('click',()=>scrollTo({top:0,behavior:reduced?'auto':'smooth'}));
+
+/* reveal, spy, counters */
+const links=$$('#nav a');
+function fmt(el,v){return (el.dataset.sep?v.toLocaleString(lang==='en'?'en-US':'pt-BR'):v)+(el.dataset.suffix||'')}
+function count(el){const end=+el.dataset.count;if(reduced){el.textContent=fmt(el,end);return}
+  const t0=performance.now(),dur=1600;(function f(t){const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,4);el.textContent=fmt(el,Math.round(end*e));if(k<1)requestAnimationFrame(f)})(t0)}
+function lightSquares(){$$('#squares i[data-lit]').forEach(i=>i.classList.add('lit'))}
+if('IntersectionObserver' in window){
+  const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+  $$('main section[id]').forEach(s=>spy.observe(s));
+  const rv=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rv.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+  $$('.rv').forEach(el=>rv.observe(el));
+  const cnt=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){if(e.target.dataset.count)count(e.target);else lightSquares();cnt.unobserve(e.target)}}),{threshold:.5});
+  $$('[data-count]').forEach(el=>cnt.observe(el));cnt.observe($('#squares'));
+}else{$$('.rv').forEach(el=>el.classList.add('in'));lightSquares()}
+
+/* ---------- pix ---------- */
+$('#copypix').addEventListener('click',async()=>{const s=$('#pixstatus'),key=$('#pixkey').textContent;
+  try{await navigator.clipboard.writeText(key);s.textContent=T('Chave Pix copiada.','Pix key copied.')}
+  catch(e){const r=document.createRange();r.selectNodeContents($('#pixkey'));const g=getSelection();g.removeAllRanges();g.addRange(r);s.textContent=T('Chave selecionada. Use a opção Copiar do seu aparelho.','Key selected. Use your device\'s Copy option.')}
+  setTimeout(()=>s.textContent='',5000)});
+
+/* ---------- contact form ---------- */
+const form=$('#form'),send=$('#send');
+function buildMsg(){const n=$('#name').value.trim(),o=$('#org').value.trim(),t=$('#topic'),m=$('#msg').value.trim();
+  const topic=lang==='en'?t.options[t.selectedIndex].textContent.toLowerCase():t.value;
+  let s=T('Olá! Sou ','Hello! I am ')+(n||T('[seu nome]','[your name]'));
+  if(o)s+=T(', da ',', from ')+o;
+  s+=T('. Gostaria de conversar sobre ','. I would like to talk about ')+topic+T(' com o Instituto Sunset.',' with Instituto Sunset.');
+  if(m)s+='\n\n'+m;return s}
+function syncForm(){const s=buildMsg();$('#preview').textContent=s;send.href=WA+encodeURIComponent(s)}
+form.addEventListener('input',()=>{$('#f-name').classList.remove('bad');syncForm()});
+form.addEventListener('submit',e=>e.preventDefault());
+send.addEventListener('click',e=>{if(!$('#name').value.trim()){e.preventDefault();$('#f-name').classList.add('bad');$('#name').focus()}});
+
+/* ---------- language ---------- */
+function setLang(l){lang=l;root.lang=l==='en'?'en':'pt-BR';
+  $$('[data-en]').forEach(el=>{if(el.dataset.pt===undefined)el.dataset.pt=el.innerHTML;el.innerHTML=l==='en'?el.dataset.en:el.dataset.pt});
+  const b=$('#lang');b.textContent=l==='en'?'PT':'EN';b.setAttribute('aria-label',l==='en'?'Mudar para português':'Switch to English');b.title=l==='en'?'Português':'English';
+  document.title=T('Instituto Sunset — Educação que transforma futuros','Instituto Sunset — Education that transforms futures');
+  $('#top').setAttribute('aria-label',T('Voltar ao topo','Back to top'));
+  $('#rprev').setAttribute('aria-label',T('Foto anterior','Previous photo'));$('#rnext').setAttribute('aria-label',T('Próxima foto','Next photo'));
+  $('#pprev').setAttribute('aria-label',T('Projeto anterior','Previous project'));$('#pnext').setAttribute('aria-label',T('Próximo projeto','Next project'));
+  $('#lbprev').setAttribute('aria-label',T('Fotografia anterior','Previous photo'));$('#lbnext').setAttribute('aria-label',T('Próxima fotografia','Next photo'));
+  $('#grabber').setAttribute('aria-label',T('Fechar menu','Close menu'));
+  $$('[data-count][data-sep]').forEach(el=>el.textContent=fmt(el,+el.dataset.count));
+  galleryText();showRobot(rIdx);shirtText();syncForm();if(lb.open)paint();frame();
+  store.set('sunset-lang',l)}
+$('#lang').addEventListener('click',()=>setLang(lang==='en'?'pt':'en'));
+setLang(store.get('sunset-lang')==='en'?'en':'pt');
+})();
+</script>
 </body>
 </html>
